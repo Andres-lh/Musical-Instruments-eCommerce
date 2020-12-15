@@ -47,6 +47,10 @@
     text-decoration: none;
     padding: 0.5rem 1rem;
   }
+
+  .nav-links i{
+      margin-left: 0.5rem;
+  }
   
   .nav-links:hover {
     background-color: #4a4b4d;
@@ -65,11 +69,9 @@
   .menu-icon {
     display: none;
   }
+
   
   @media screen and (max-width: 960px) {
-    .NavbarItems {
-      position: relative;
-    }
   
     .nav-menu {
       display: flex;
@@ -105,9 +107,7 @@
   
     .navbar-logo {
       position: absolute;
-      top: 0;
-      left: 0;
-      transform: translate(25%, 50%);
+      justify-content: center;
     }
   
     .menu-icon {

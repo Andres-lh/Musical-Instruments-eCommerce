@@ -7,7 +7,7 @@
 }
 
 .dropdown-menu li{
-    background: #1888ff;
+    background: black;
     cursor: pointer;
 }
 
@@ -27,3 +27,9 @@
     color: white;
     padding: 16px;
 }
+
+@media screen and (max-width: 960px) {
+    .fa-caret-down {
+      display: none;
+    }
+  } 
