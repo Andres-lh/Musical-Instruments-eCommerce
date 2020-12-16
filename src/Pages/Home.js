@@ -1,11 +1,15 @@
 import React from 'react'
-import '../App.css'
+
+import Hero from '../Components/Body/Hero'
 
 function Home() {
     return (
-        <>
-            <h1 className="home">Home</h1>
-        </>
+        <div className="home">
+            <Hero/>
+        </div>
+
+            
+        
     )
 }
 

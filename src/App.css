@@ -5,10 +5,5 @@
   font-family: 'Dosis', sans-serif;
 }
 
-.home, .products, .about, .cart{
-  display: flex;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
-}
+
+
