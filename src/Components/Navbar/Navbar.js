@@ -14,7 +14,7 @@ function Navbar() {
     const onMouseLeave = () =>{window.innerWidth < 960 ? setDropdown(false) : setDropdown(false)}
 
     return (
-        <div>
+        <>
             <nav className="navbar">
                 <Link to='/' className="navbar-logo">
                     Instruments
@@ -31,23 +31,23 @@ function Navbar() {
                     </li>
                     <li className="nav-item" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
                         {dropdown && <Dropdown/>}
-                        <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                        <Link to="/Products" className="nav-links" onClick={closeMobileMenu}>
                             Products
                             <i className="fas fa-caret-down"></i>
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                        <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
                             About
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                        <Link to="/cart" className="nav-links" onClick={closeMobileMenu}>
                             <i class="fas fa-shopping-cart"></i>
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/" className="nav-links" onClick={closeMobileMenu}>
+                        <Link to="/account" className="nav-links" onClick={closeMobileMenu}>
                             <i class="fas fa-user"></i>
                         </Link>
                         
@@ -55,7 +55,7 @@ function Navbar() {
                 </ul>
 
             </nav>
-        </div>
+        </>
     );
 }
 

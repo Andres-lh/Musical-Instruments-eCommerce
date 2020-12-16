@@ -8,7 +8,7 @@ function Dropdown() {
     const[click, setClick] = useState(false)
     const handleClick = () => (!click)
     return (
-        <div>
+        <>
             <ul onClick={handleClick} className={click ? 'dropdown-menu clicked' : 'dropdown-menu'}>
                 {DropdownItems.map((item, index) =>{
                     return(
@@ -20,7 +20,7 @@ function Dropdown() {
                     )
                 })}
             </ul>
-        </div>
+        </>
     )
 }
 
