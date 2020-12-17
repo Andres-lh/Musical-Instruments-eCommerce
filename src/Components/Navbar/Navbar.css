@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Permanent+Marker&display=swap');
+
 .navbar {
     position: sticky;
     background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
@@ -11,12 +13,13 @@
   }
   
   .navbar-logo {
-    color: #fff;
+    color: white;
     justify-self: start;
     margin-left: 20px;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+    font-family: 'Charmonman', cursive;
   }
 
   .navbar-logo i{
@@ -46,15 +49,16 @@
   }
   
   .nav-links {
-    color: white;
+    color:white;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    font-weight: 800;
   }
 
-  .nav-links i{
-      margin-left: 0.5rem;
+  .fa-caret-down{
+    margin-left: 0.5rem;
   }
-  
+    
   .nav-links:hover {
     background-color: #4a4b4d;
     border-radius: 4px;
