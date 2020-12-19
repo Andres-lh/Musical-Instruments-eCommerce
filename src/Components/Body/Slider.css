@@ -1,0 +1,50 @@
+.slider-container{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.name-bla{
+    color: white;
+}
+
+.left-side{
+    display: flex;
+    width: 50%;
+    height: 90vh;
+    background-color: rgb(0, 0, 0);
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
+
+.right-side{
+    display:flex;
+    width: 50%;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.slider-image{
+    width: 80%;
+    height: 80%;
+}
+
+.fa-chevron-left{
+    position: relative;
+    font-size: 3rem;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.fa-chevron-right{
+    position: relative;
+    font-size: 3rem;
+    padding: 1rem;
+    cursor: pointer;
+    z-index: 1;
+}
+

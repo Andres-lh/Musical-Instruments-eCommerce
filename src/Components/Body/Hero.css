@@ -1,16 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-video{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: -1;
-}
-
 .hero-container{
-    /*background-image: url(images/) center center/cover no-repeat;*/
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -18,6 +9,14 @@ video{
     align-items: center;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
     object-fit: contain;
+}
+
+video{
+    object-fit: cover;
+    width: 100%;
+    height: 90%;
+    position:absolute;
+    z-index: -1;
 }
 
 .hero-btns {
