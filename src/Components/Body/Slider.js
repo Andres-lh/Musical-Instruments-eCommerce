@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./Slider.css";
-import SliderItem from "./SliderItem";
 import { Link } from "react-router-dom";
 import { Button } from "../Body/Button";
 import { data } from "../../data/data";
@@ -22,6 +21,10 @@ function Slider({slides}) {
     }
 
     return (
+        <>
+        <div className="slider-title">
+            <h1>Best Sellers</h1>
+        </div>
         <div className="slider-container">
             <div className="left-side">
                 <div className="slider-product-name">
@@ -30,7 +33,7 @@ function Slider({slides}) {
                             <div className={index === current ? "slide active" : "slide"} key={index}>
                                  {index ===  current && (
                                  <div>
-                                    <h1 className="name-bla">{slide.name}</h1>
+                                    <h1 className="slide-name">{slide.name}</h1>
                                     <p>{slide.description}</p>
                                  </div>
                                  )}  
@@ -51,6 +54,7 @@ function Slider({slides}) {
                 <i class="fas fa-chevron-right" onClick={nextSlide}/>
             </div>
         </div>
+        </>
     );
 }
 
