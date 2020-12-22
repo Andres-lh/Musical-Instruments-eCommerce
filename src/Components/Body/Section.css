@@ -1,6 +1,8 @@
 .section-container{
-    display: grid;  
-    margin: 3rem;
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
 .section-title{
@@ -13,8 +15,7 @@
 
 .section-grid {
     display: grid;
-    width: 100%;
-    grid-template-columns: 10rem 10rem 10rem 10rem;
-    column-gap: 13rem;
+    grid-template-columns: 271px 271px 271px 271px;
+    column-gap: 70px;
     
 }

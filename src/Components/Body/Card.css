@@ -1,8 +1,8 @@
 .card-container{
     display: grid;
-    width: 300px;
-    grid-template-columns: 300px;
-    grid-template-rows: 270px auto  50px;
+    width: 270px;
+    grid-template-columns: 270px;
+    grid-template-rows: 230px 70px  50px;
     grid-template-areas: "image" "title" "footer";
     border-radius: 18px;
     background: white;
@@ -13,14 +13,14 @@
 
 .card-image {
     grid-area: image;
-    border-top-left-radius: 15px;
+    border-top-left-radius: 16px;
     border-top-right-radius: 15px;
     background-size: cover;
   }
 
   .card-image img{
       height: 300px;
-      width: 250px;
+      width: 220px;
   }
 
   .card-title{
