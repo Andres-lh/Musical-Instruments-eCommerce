@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Slider.css";
 import { Link } from "react-router-dom";
 import { Button } from "../Body/Button";
-import { data } from "../../data/data";
+import data from "../../data/data";
 
 function Slider({slides}) {
     const [current, setCurrent] = useState(0);
@@ -28,13 +28,12 @@ function Slider({slides}) {
         <div className="slider-container">
             <div className="left-side">
                 <div className="slider-product-name">
-                    {data.map((slide, index) => {
+                    {data.products.map((slide, index) => {
                         return (
                             <div className={index === current ? "slide active" : "slide"} key={index}>
                                  {index ===  current && (
                                  <div>
                                     <h1 className="slide-name">{slide.name}</h1>
-                                    <p>{slide.description}</p>
                                  </div>
                                  )}  
                             </div>
@@ -44,10 +43,10 @@ function Slider({slides}) {
             </div>
             <div className="right-side">
                 <i class="fas fa-chevron-left" onClick={prevSlide}/>
-                {data.map((slide, index) => {
-                    return (
+                {data.products.map((slide, index) => {
+                    return ( 
                         <div className={index === current ? "slide active" : "slide"} key={index}>
-                            {index ===  current && (<img src={slide.image} alt="" className="slider-image" /> )}  
+                            {index ===  current && (<img src={slide.image} alt=""  className="slide-image" /> )}  
                         </div>
                     );
                 })}

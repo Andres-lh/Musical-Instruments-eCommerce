@@ -10,7 +10,7 @@ function Hero() {
             <h1>Are you ready to rock?</h1>
             <div className="hero-btns">
                 <Button className='btns' buttonStyle='btn-outline' buttonSize='btn-large'>
-                    Buy now
+                    Shop now
                 </Button>
             </div>
         </div>
