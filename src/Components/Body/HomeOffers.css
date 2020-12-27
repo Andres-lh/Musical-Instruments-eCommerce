@@ -1,0 +1,75 @@
+.offers-container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.offers-background {
+    height: 100%;
+    width: 90%;
+    background-image: url("../../Assets/images/saxophone.jpeg");
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 2px -1px 9px 3px rgba(0,0,0,0.73);
+}
+
+.offers-content {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.offers-content h1 {
+    padding: 1rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+@media screen and (max-width: 1150px){
+
+    .offers-background{
+        height: 80%;
+        width: 80%;
+    }
+
+    .offers-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .offers-content h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 410px){
+
+    .offers-container{
+        height: 50vh;
+        width: 100%;
+    }
+
+    .offers-background{
+        background-size: cover;
+        height: 80%;
+        width: 80%;
+    }
+    
+    .offers-content h1 {
+        font-size: 1.5rem;
+    }
+}

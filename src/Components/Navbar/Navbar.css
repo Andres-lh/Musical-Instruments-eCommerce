@@ -153,3 +153,18 @@
       transition: 250ms;
     }
 }
+
+@media screen and (max-width: 500px){
+  
+  .navbar {
+    justify-content: left;
+  }
+  .navbar-logo{
+    font-size: 1.5rem;
+  }
+  
+  .fa-bars {
+    font-size: 1.5rem;
+  }
+ 
+}

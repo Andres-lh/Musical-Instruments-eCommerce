@@ -24,6 +24,11 @@ function ProductCard(props) {
                     <span>{`$ ${product.price}`}</span>
                 </div>
             </div>
+            <Link to="/">
+                <button className="card-button" >
+                    Add to cart
+                </button>
+            </Link>
         </div>
     );
 }
