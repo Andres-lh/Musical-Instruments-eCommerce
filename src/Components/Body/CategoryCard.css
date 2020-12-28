@@ -1,0 +1,9 @@
+.category-card {
+    height: 13rem;
+    width: 20rem;
+}
+  
+.category-card > img {
+    height: 100%;
+    width: 100%;
+}

@@ -31,13 +31,13 @@ function Navbar() {
                     </li>
                     <li className="nav-item" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
                         {dropdown && <Dropdown/>}
-                        <Link to="/Products" className="nav-links" onClick={closeMobileMenu}>
+                        <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                             Products
                             <i className="fas fa-caret-down"></i>
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
+                        <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                             About
                         </Link>
                     </li>

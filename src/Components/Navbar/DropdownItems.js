@@ -1,22 +1,32 @@
 export const DropdownItems = [
     {
         title: 'Guitars',
-        path: '/Guitars',
+        path: '/guitars',
+        cName: 'dropdown-link'
+    },
+    {
+        title: 'Basses',
+        path: '/basses',
         cName: 'dropdown-link'
     },
     {
         title: 'Drums',
-        path: '/Drums',
+        path: '/drums',
         cName: 'dropdown-link'
     },
     {
-        title: 'Orchestal',
-        path: '/Orchestal',
+        title: 'Keyboards',
+        path: '/keyboards',
         cName: 'dropdown-link'
     },
     {
-        title: 'Strings',
-        path: '/Strings',
+        title: 'Orchestral',
+        path: '/orchestral',
+        cName: 'dropdown-link'
+    },
+    {
+        title: 'Studio',
+        path: '/studio',
         cName: 'dropdown-link'
     }
 ]
