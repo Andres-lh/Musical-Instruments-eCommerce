@@ -5,7 +5,7 @@ import {Button} from './Button';
 
 function Hero() {
     return (
-        <div className="hero-container">
+        <div className="hero-container" id = "hero">
             <video src={Video} autoPlay loop muted/>
             <h1>Are you ready to rock?</h1>
             <div className="hero-btns">

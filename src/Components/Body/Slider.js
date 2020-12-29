@@ -3,8 +3,11 @@ import "./Slider.css";
 import { Link } from "react-router-dom";
 import { Button } from "../Body/Button";
 import data from "../../data/data";
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 function Slider({slides}) {
+
     const [current, setCurrent] = useState(0);
     const length = slides.length;
 
@@ -20,8 +23,10 @@ function Slider({slides}) {
         return null;
     }
 
+    Aos.init({duration: 3000})
+
     return (
-        <>
+        <div data-aos = "fade-right">
         <div className="slider-title">
             <h1>Best Sellers</h1>
         </div>
@@ -53,7 +58,7 @@ function Slider({slides}) {
                 <i class="fas fa-chevron-right" onClick={nextSlide}/>
             </div>
         </div>
-        </>
+        </div>
     );
 }
 

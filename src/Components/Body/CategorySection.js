@@ -2,12 +2,15 @@ import React from 'react';
 import CategoryCard from './CategoryCard';
 import './CategorySection.css';
 import { Link } from 'react-router-dom';
-
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 function Products() {
+
+    Aos.init({duration : 2000})
+
     return (
-        <div className = "products-page">
+        <div data-aos = "fade-in" className = "products-page" id="categorySection">
             <h1>Shop by category</h1>
             <div className = "products-page-grid">
                 <Link to= "/guitars">

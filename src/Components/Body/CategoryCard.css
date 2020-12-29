@@ -1,9 +1,14 @@
 .category-card {
     height: 13rem;
     width: 20rem;
+    transition: 0.5 ease-in;
 }
   
 .category-card > img {
     height: 100%;
     width: 100%;
 }
+
+.category-card:hover { 
+    box-shadow: 2px 2px 40px -1px rgb(37, 135, 247);
+}   

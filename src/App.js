@@ -5,11 +5,13 @@ import Footer from './Components/Body/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import Cart from './Pages/Cart';
+import ScrollToTop from "./Components/Body/ScrollToTop";
 
 function App() {
     return (
         <div className="App">
            <Router>
+                <ScrollToTop />
                <Navbar/>
                <Switch>
                     <Route exact path='/' component={Home}/>

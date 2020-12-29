@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import './Styles/Cart.css';
 
 function Cart() {
     return (
@@ -8,4 +9,4 @@ function Cart() {
     )
 }
 
-export default Cart
+export default Cart;
