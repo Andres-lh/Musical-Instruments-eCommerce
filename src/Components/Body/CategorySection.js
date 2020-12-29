@@ -37,7 +37,7 @@ function Products() {
                     image="https://images.pexels.com/photos/2876659/pexels-photo-2876659.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
                     />
                 </Link>
-                <Link to="orchestral">
+                <Link to="orchestra">
                     <CategoryCard 
                     name="Band and Orchestra" 
                     image="https://images.pexels.com/photos/2102568/pexels-photo-2102568.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"

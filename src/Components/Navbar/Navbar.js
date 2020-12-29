@@ -33,7 +33,7 @@ function Navbar() {
                             Home
                         </Link>
                     </li>
-                    <li className="nav-item" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+                    <li className="nav-item" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}  onClick={closeMenu}>
                         {dropdown && <Dropdown/>}
                         <LinkScroll
                             activeClass = "active"

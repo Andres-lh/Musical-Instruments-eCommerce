@@ -20,8 +20,8 @@ export const DropdownItems = [
         cName: 'dropdown-link'
     },
     {
-        title: 'Orchestral',
-        path: '/orchestral',
+        title: 'Orchestra',
+        path: '/orchestra',
         cName: 'dropdown-link'
     },
     {
