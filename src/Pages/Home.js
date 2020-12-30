@@ -15,7 +15,7 @@ function Home() {
             <Hero />
             <Section />
             <HomeOffers />
-            <Slider slides={data.products} />
+            <Slider slides={data.featured} />
             <CategorySection />
         </>
     );

@@ -1,33 +1,45 @@
 const data = {
-    products: [
+
+    featured: [
         {
             id: 1,
             name: "Fender Precision bass",
             image: "https://www.ardemadrid.com/2158-thickbox_default/epiphone-les-paul-studio-gothic.jpg",
-            category: "Guitar",
+            category: "featured",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 5,
+            numReviews:12,
         },
         {
             id: 2,
             name: "Acoustic guitar fender",
             image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO2JcbZnT6cpA9yM4bGMFKqAeaTTPq2rAy8XT5aNBs-dMS_G5Gt7o9VILWdYcgx1DVtymlvaU&usqp=CAc",
-            category: "Guitar",
+            category: "featured",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },
         {
             id: 3,
             name: "Epiphone les paul standard",
             image: "https://www.musik-produktiv.es/pic-010119758xxl/epiphone-les-paul-standard-50s-vintage-sunburst.jpg",
-            category: "Guitar",
+            category: "featured",
             price: 350,
-
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },
         {
             id: 4,
             name: "Epiphone les paul black",
             image: "https://www.ardemadrid.com/2158-thickbox_default/epiphone-les-paul-studio-gothic.jpg",
-            category: "Guitar",
+            category: "featured",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4,
+            numReviews:12,
         }
     ],
 
@@ -36,71 +48,101 @@ const data = {
             id: 1,
             name: "Gibson",
             image: "https://www.ardemadrid.com/2158-thickbox_default/epiphone-les-paul-studio-gothic.jpg",
-            category: "Guitar",
+            category: "guitars",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },
         {
             id: 2,
             name: "Gibson",
             image: "https://www.ardemadrid.com/2158-thickbox_default/epiphone-les-paul-studio-gothic.jpg",
-            category: "Guitar",
+            category: "guitars",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },
         {
             id: 3,
             name: "Gibson",
             image: "https://www.ardemadrid.com/2158-thickbox_default/epiphone-les-paul-studio-gothic.jpg",
-            category: "Guitar",
+            category: "guitars",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },
         {
             id: 4,
             name: "Gibson",
             image: "https://www.ardemadrid.com/2158-thickbox_default/epiphone-les-paul-studio-gothic.jpg",
-            category: "Guitar",
+            category: "guitars",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },
         {
             id: 5,
             name: "Gibson",
             image: "https://www.ardemadrid.com/2158-thickbox_default/epiphone-les-paul-studio-gothic.jpg",
-            category: "Guitar",
+            category: "guitars",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },
         {
             id: 6,
             name: "Gibson",
             image: "https://www.ardemadrid.com/2158-thickbox_default/epiphone-les-paul-studio-gothic.jpg",
-            category: "Guitar",
+            category: "guitars",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },
         {
             id: 7,
             name: "Gibson",
             image: "https://www.ardemadrid.com/2158-thickbox_default/epiphone-les-paul-studio-gothic.jpg",
-            category: "Guitar",
+            category: "guitars",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },
         {
             id: 8,
             name: "Gibson",
             image: "https://www.ardemadrid.com/2158-thickbox_default/epiphone-les-paul-studio-gothic.jpg",
-            category: "Guitar",
+            category: "guitars",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },
         {
             id: 9,
             name: "Gibson",
             image: "https://www.ardemadrid.com/2158-thickbox_default/epiphone-les-paul-studio-gothic.jpg",
-            category: "Guitar",
+            category: "guitars",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },
         {
             id: 10,
             name: "Gibson",
             image: "https://www.ardemadrid.com/2158-thickbox_default/epiphone-les-paul-studio-gothic.jpg",
-            category: "Guitar",
+            category: "guitars",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },   
     ],
 
@@ -111,6 +153,9 @@ const data = {
             image: "https://images.reverb.com/image/upload/s--osA6AZrM--/f_auto,t_supersize/v1529422470/lhqssiiyeefljjygxdm1.png",
             category: "basses",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },
         {
             id: 2,
@@ -118,6 +163,9 @@ const data = {
             image: "https://images.reverb.com/image/upload/s--osA6AZrM--/f_auto,t_supersize/v1529422470/lhqssiiyeefljjygxdm1.png",
             category: "basses",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },
         {
             id: 3,
@@ -125,6 +173,9 @@ const data = {
             image: "https://images.reverb.com/image/upload/s--osA6AZrM--/f_auto,t_supersize/v1529422470/lhqssiiyeefljjygxdm1.png",
             category: "basses",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },
         {
             id: 4,
@@ -132,6 +183,9 @@ const data = {
             image: "https://images.reverb.com/image/upload/s--osA6AZrM--/f_auto,t_supersize/v1529422470/lhqssiiyeefljjygxdm1.png",
             category: "basses",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },
         {
             id: 5,
@@ -139,6 +193,9 @@ const data = {
             image: "https://images.reverb.com/image/upload/s--osA6AZrM--/f_auto,t_supersize/v1529422470/lhqssiiyeefljjygxdm1.png",
             category: "basses",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },
         {
             id: 6,
@@ -146,6 +203,9 @@ const data = {
             image: "https://images.reverb.com/image/upload/s--osA6AZrM--/f_auto,t_supersize/v1529422470/lhqssiiyeefljjygxdm1.png",
             category: "basses",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },
         {
             id: 7,
@@ -153,6 +213,9 @@ const data = {
             image: "https://images.reverb.com/image/upload/s--osA6AZrM--/f_auto,t_supersize/v1529422470/lhqssiiyeefljjygxdm1.png",
             category: "basses",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },
         {
             id: 8,
@@ -160,6 +223,9 @@ const data = {
             image: "https://images.reverb.com/image/upload/s--osA6AZrM--/f_auto,t_supersize/v1529422470/lhqssiiyeefljjygxdm1.png",
             category: "basses",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },
         {
             id: 9,
@@ -167,6 +233,9 @@ const data = {
             image: "https://images.reverb.com/image/upload/s--osA6AZrM--/f_auto,t_supersize/v1529422470/lhqssiiyeefljjygxdm1.png",
             category: "basses",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },
         {
             id: 10,
@@ -174,8 +243,12 @@ const data = {
             image: "https://images.reverb.com/image/upload/s--osA6AZrM--/f_auto,t_supersize/v1529422470/lhqssiiyeefljjygxdm1.png",
             category: "basses",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },   
     ],
+
     drums: [
         {
             id: 1,
@@ -183,6 +256,9 @@ const data = {
             image: "https://static.keymusic.com/products/287848/XL/roland-vad506-v-drum.jpg",
             category: "drums",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },
         {
             id: 2,
@@ -190,6 +266,9 @@ const data = {
             image: "https://static.keymusic.com/products/287848/XL/roland-vad506-v-drum.jpg",
             category: "drums",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },
         {
             id: 3,
@@ -197,6 +276,9 @@ const data = {
             image: "https://static.keymusic.com/products/287848/XL/roland-vad506-v-drum.jpg",
             category: "drums",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },
         {
             id: 4,
@@ -204,6 +286,9 @@ const data = {
             image: "https://static.keymusic.com/products/287848/XL/roland-vad506-v-drum.jpg",
             category: "drums",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },
         {
             id: 5,
@@ -211,8 +296,12 @@ const data = {
             image: "https://static.keymusic.com/products/287848/XL/roland-vad506-v-drum.jpg",
             category: "drums",
             price: 350,
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         },
     ],
+
     keyboards: [
         {
             id: 1,
@@ -220,8 +309,12 @@ const data = {
             image: "https://www.pianosbogota.com/wp-content/uploads/2018/11/PIANO-YAMAHA-P-125.jpg",
             category: "keyboards",
             price: 350, 
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         }
     ],
+
     orchestra: [
         {
             id: 1,
@@ -229,8 +322,12 @@ const data = {
             image: "https://upload.wikimedia.org/wikipedia/commons/1/1b/Violin_VL100.png",
             category: "orchestra",
             price: 350, 
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         }
     ],
+
     studio: [
         {
             id: 1,
@@ -238,6 +335,9 @@ const data = {
             image: "https://media.sweetwater.com/api/i/q-82__ha-4a2b7ad75ce1e8c1__hmac-9ba75fef7da87911721fa8d181832c786a0e1744/images/items/750/NT1AAnniv-large.jpg",
             category: "studio",
             price: 350, 
+            description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
+            rating: 4.5,
+            numReviews:12,
         }
     ]
 };

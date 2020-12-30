@@ -1,6 +1,7 @@
 import React from "react";
 import "./ProductCard.css";
 import { Link } from "react-router-dom";
+import Rating from './Rating';
 
 function ProductCard(props) {
     const { product } = props;
@@ -18,7 +19,7 @@ function ProductCard(props) {
                     <Link to={`/product/${product.category}/${product.id}`} className="product-name">
                         <p>{product.name}</p>
                     </Link>
-                    <p>rating</p>
+                    <Rating rating = {product.rating} numReviews = {product.numReviews} />
                 </div>
                 <div className="product price">
                     <span>{`$ ${product.price}`}</span>

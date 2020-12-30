@@ -10,7 +10,7 @@ function Navbar() {
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
-    const closeMenu = () => setDropdown(false);
+    const closeMenu = () => {window.innerWidth > 960 ? setDropdown(false) : setDropdown(false)};
 
     const onMouseEnter = () =>{window.innerWidth < 960 ? setDropdown(false) : setDropdown(true)};
     const onMouseLeave = () =>{window.innerWidth < 960 ? setDropdown(false) : setDropdown(false)};
@@ -28,12 +28,12 @@ function Navbar() {
                     <i className={click ? "fas fa-times" : "fas fa-bars"}/>
                 </div>
                 <ul className={click ? "nav-menu active" : "nav-menu" }>
-                    <li className="nav-item" >
-                        <Link to="/" className="nav-links" onClick={closeMobileMenu} onClick = {scrollToTop}>
+                    <li className="nav-item"  onClick = {scrollToTop}>
+                        <Link to="/" className="nav-links" onClick={closeMobileMenu}>
                             Home
                         </Link>
                     </li>
-                    <li className="nav-item" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}  onClick={closeMenu}>
+                    <li className="nav-item" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} onClick = {closeMenu}  >
                         {dropdown && <Dropdown/>}
                         <LinkScroll
                             activeClass = "active"
@@ -43,8 +43,7 @@ function Navbar() {
                             offset = {-70}
                             duration = {500}
                             className="nav-links" 
-                            onClick={closeMobileMenu} 
-                            onClick={closeMenu}
+                            onClick={closeMobileMenu}
                         >
                             Products
                             <i className="fas fa-caret-down"></i>

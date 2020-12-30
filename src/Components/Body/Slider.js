@@ -33,7 +33,7 @@ function Slider({slides}) {
         <div className="slider-container">
             <div className="left-side">
                 <div className="slider-product-name">
-                    {data.products.map((slide, index) => {
+                    {data.featured.map((slide, index) => {
                         return (
                             <div className={index === current ? "slide active" : "slide"} key={index}>
                                  {index ===  current && (
@@ -48,7 +48,7 @@ function Slider({slides}) {
             </div>
             <div className="right-side">
                 <i class="fas fa-chevron-left" onClick={prevSlide}/>
-                {data.products.map((slide, index) => {
+                {data.featured.map((slide, index) => {
                     return ( 
                         <div className={index === current ? "slide active" : "slide"} key={index}>
                             {index ===  current && (<img src={slide.image} alt=""  className="slide-image" /> )}  

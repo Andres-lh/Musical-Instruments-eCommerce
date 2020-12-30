@@ -11,6 +11,7 @@ import Drums from './Pages/Drums';
 import Keyboards from './Pages/Keyboards';
 import Orchestra from './Pages/Orchestra';
 import Studio from './Pages/Studio';
+import ProductDetails from './Pages/ProductDetails';
 import ScrollToTop from "./Components/Body/ScrollToTop";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
                     <Route exact path='/keyboards' component={Keyboards}/>
                     <Route exact path='/orchestra' component={Orchestra}/>
                     <Route exact path='/studio' component={Studio}/>
+                    <Route path='/product/:category/:id' component={ProductDetails}/>
                </Switch>
                <Footer/>
            </Router>
