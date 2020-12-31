@@ -1,6 +1,6 @@
 import React from 'react';
 import CategoryCard from './CategoryCard';
-import './CategorySection.css';
+import './Styles/CategorySection.css';
 import { Link } from 'react-router-dom';
 import Aos from 'aos';
 import 'aos/dist/aos.css'

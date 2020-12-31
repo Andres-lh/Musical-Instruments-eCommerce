@@ -1,6 +1,6 @@
 import React from 'react';
-import './Hero.css';
-import Video from '../../Assets/videos/drumVideo.mp4';
+import './Styles/Hero.css';
+import Video from '../Assets/videos/drumVideo.mp4';
 import {Button} from './Button';
 
 function Hero() {

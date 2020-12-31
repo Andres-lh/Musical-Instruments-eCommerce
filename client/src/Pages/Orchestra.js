@@ -1,7 +1,7 @@
 import React from 'react';
 import './Styles/ProductPages.css';
 import data from '../data/data';
-import ProductCard from '../Components/Body/ProductCard';
+import ProductCard from '../Components/ProductCard';
 
 function Orchestra() {
     return (

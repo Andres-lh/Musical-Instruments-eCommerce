@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import "./Slider.css";
+import "./Styles/Slider.css";
 import { Link } from "react-router-dom";
-import { Button } from "../Body/Button";
-import data from "../../data/data";
+import { Button } from "./Button";
+import data from "../data/data";
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 

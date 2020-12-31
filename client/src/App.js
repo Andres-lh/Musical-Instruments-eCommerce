@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Navbar from "./Components/Navbar/Navbar";
-import Footer from './Components/Body/Footer';
+import Navbar from "./Components/Navbar";
+import Footer from './Components/Footer';
 import Home from './Pages/Home';
 import Cart from './Pages/Cart';
 import Guitars from './Pages/Guitars';
@@ -12,7 +12,7 @@ import Keyboards from './Pages/Keyboards';
 import Orchestra from './Pages/Orchestra';
 import Studio from './Pages/Studio';
 import ProductDetails from './Pages/ProductDetails';
-import ScrollToTop from "./Components/Body/ScrollToTop";
+import ScrollToTop from "./Components/ScrollToTop";
 
 function App() {
     return (

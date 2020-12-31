@@ -1,7 +1,7 @@
 import React from "react";
 import ProductCard from "./ProductCard";
-import data from "../../data/data";
-import "./Section.css";
+import data from "../data/data";
+import "./Styles/Section.css";
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 

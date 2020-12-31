@@ -1,5 +1,5 @@
 import React from 'react';
-import './HomeOffers.css';
+import './Styles/HomeOffers.css';
 import { Button } from './Button';
 import Aos from 'aos';
 import 'aos/dist/aos.css'

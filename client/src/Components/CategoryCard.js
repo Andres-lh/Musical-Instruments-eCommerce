@@ -1,5 +1,5 @@
 import React from 'react';
-import './CategoryCard.css'
+import './Styles/CategoryCard.css'
 
 function CategoryCard(props) {
     return (

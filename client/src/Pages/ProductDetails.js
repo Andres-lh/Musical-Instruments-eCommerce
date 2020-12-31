@@ -1,8 +1,8 @@
 import React from 'react';
 import './Styles/ProductDetails.css';
 import data from '../data/data';
-import Rating from '../Components/Body/Rating';
-import {Button} from '../Components/Body/Button';
+import Rating from '../Components/Rating';
+import {Button} from '../Components/Button';
 
 function ProductDetails(props){
     const {category, id} = props.match.params;
