@@ -1,20 +1,40 @@
 import React from 'react';
 import './Styles/ProductPages.css';
-import data from '../data/data';
 import ProductCard from '../Components/ProductCard';
+import { connect } from 'react-redux';
+import { getProducts } from '../actions/actions';
 
-function Studio() {
+function Studio(props) {
+    const { products, loading, error } = props;
+ 
     return (
-        <div className = "product-pages">
-            <h1 className = "product-title">Studio and Production</h1>
-            <div className = "products-container">
-                {data.studio.map( product => {
-                    return <ProductCard key={product.id} product={product} />
-                })}
-            </div>
-            
-        </div>
-    )
+        <>
+            {loading ? (
+                <h1 className="product-pages">loading...</h1>
+            ) : error ? (
+                <h1 className="product-pages">error</h1>
+            ) : (
+                <div className="product-pages">
+                    <h1 className="product-title">Studio</h1>
+                    <div className="products-container">
+                        {products.studio.map((product) => {
+                            return (
+                                <ProductCard
+                                    key={product.id}
+                                    product={product}
+                                />
+                            );
+                        })}
+                    </div>
+                </div>
+            )}
+        </>
+    );
 }
 
-export default Studio;
+const mapStateToProps = (state) => {
+	return state.productList;
+};
+
+
+export default connect(mapStateToProps, getProducts)(Studio);

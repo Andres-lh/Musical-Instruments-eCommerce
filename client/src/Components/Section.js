@@ -1,21 +1,24 @@
 import React from "react";
 import ProductCard from "./ProductCard";
-import data from "../data/data";
 import "./Styles/Section.css";
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 
 
-function Section() {
-
-    Aos.init({duration: 1000})
-
+function Section(props) {
+    Aos.init({ duration: 1000 });
+    const { products } = props;
     return (
-        <div data-aos = "fade-up" className ="section-container">
-            <h1 className = "section-title">Featured items</h1>
-            <div className='section-grid'>
-                {data.featured.map((product) => {
-                    return <ProductCard key={product.id} product={product}></ProductCard>
+        <div data-aos="fade-up" className="section-container">
+            <h1 className="section-title">Featured items</h1>
+            <div className="section-grid">
+                {products.featured.map((product) => {
+                    return (
+                        <ProductCard
+                            key={product.id}
+                            product={product}
+                        ></ProductCard>
+                    );
                 })}
             </div>
         </div>
