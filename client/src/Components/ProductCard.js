@@ -9,14 +9,14 @@ function ProductCard(props) {
     return (
         <div className="card-container">
             <div className="product-image">
-                <Link to={`/product/${product.category}/${product.id}`}>
+                <Link to={`/products/${product.category}/${product.id}`}>
                     <img src={product.image} alt="" />
                 </Link>
             </div>
 
             <div className="card-body">
                 <div className="product-bla">
-                    <Link to={`/product/${product.category}/${product.id}`} className="product-name">
+                    <Link to={`/products/${product.category}/${product.id}`} className="product-name">
                         <p>{product.name}</p>
                     </Link>
                     <Rating rating = {product.rating} numReviews = {product.numReviews} />
