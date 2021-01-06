@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Styles/ProductPages.css';
 import ProductCard from '../Components/ProductCard';
-import { connect } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { getProducts } from '../actions/actions';
 
-function Basses(props) {
-    const { products, loading, error } = props;
+function Basses() {
+    
+    const dispatch = useDispatch();
+    const productList = useSelector((state) => state.productList)
+    const {products, loading, error} = productList;
+ 
+    
+    useEffect(() => {
+        dispatch(getProducts());
+    }, [dispatch]);
+ 
     return (
         <>
             {loading ? (
@@ -28,12 +37,8 @@ function Basses(props) {
                 </div>
             )}
         </>
-    )
-    
+            
+    );
 }
 
-const mapStateToProps = (state) => {
-	return state.productList;
-};
-
-export default connect(mapStateToProps, getProducts)(Basses);
+export default Basses;

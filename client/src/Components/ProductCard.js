@@ -5,18 +5,17 @@ import Rating from './Rating';
 
 function ProductCard(props) {
     const { product } = props;
-
     return (
         <div className="card-container">
             <div className="product-image">
-                <Link to={`/products/${product.category}/${product.id}`}>
+                <Link to={`/products/${product._id}`}>
                     <img src={product.image} alt="" />
                 </Link>
             </div>
 
             <div className="card-body">
                 <div className="product-bla">
-                    <Link to={`/products/${product.category}/${product.id}`} className="product-name">
+                    <Link to={`/products/${product._id}`} className="product-name">
                         <p>{product.name}</p>
                     </Link>
                     <Rating rating = {product.rating} numReviews = {product.numReviews} />

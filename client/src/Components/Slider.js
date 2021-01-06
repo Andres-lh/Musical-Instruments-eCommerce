@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Styles/Slider.css";
 import { Link } from "react-router-dom";
 import { Button } from "./Button";
-import data from "../data/data";
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 
@@ -33,7 +32,7 @@ function Slider({slides}) {
         <div className="slider-container">
             <div className="left-side">
                 <div className="slider-product-name">
-                    {data.featured.map((slide, index) => {
+                    {slides.map((slide, index) => {
                         return (
                             <div className={index === current ? "slide active" : "slide"} key={index}>
                                  {index ===  current && (
@@ -48,7 +47,7 @@ function Slider({slides}) {
             </div>
             <div className="right-side">
                 <i class="fas fa-chevron-left" onClick={prevSlide}/>
-                {data.featured.map((slide, index) => {
+                {slides.map((slide, index) => {
                     return ( 
                         <div className={index === current ? "slide active" : "slide"} key={index}>
                             {index ===  current && (<img src={slide.image} alt=""  className="slide-image" /> )}  

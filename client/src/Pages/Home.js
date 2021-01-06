@@ -16,8 +16,8 @@ function Home() {
 
     useEffect(() => {
         dispatch(getProducts());
-      }, [dispatch])
-
+    }, [dispatch]);
+    
     return (
         <>
         {loading ? (
@@ -36,7 +36,5 @@ function Home() {
     </>
     );
 }
-
-
 
 export default Home;

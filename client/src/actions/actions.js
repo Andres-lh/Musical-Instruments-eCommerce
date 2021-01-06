@@ -27,13 +27,13 @@ export const getProducts = () => async (dispatch) =>{
     }
 };
 
-export const getProductDetails = (id, category) => async (dispatch) => {
+export const getProductDetails = (id) => async (dispatch) => {
     dispatch({
         type: PRODUCT_DETAILS_REQUEST,
-        payload: {id: id, category: category}
+        payload: {id: id}
     });
     try {
-        const { data } = await axios.get(`/api/products/${category}/${id}`);
+        const { data } = await axios.get(`/api/products/${id}`);
         dispatch({
             type: PRODUCT_DETAILS_SUCCESS,
             payload: data
@@ -43,9 +43,7 @@ export const getProductDetails = (id, category) => async (dispatch) => {
         dispatch({
             type: PRODUCT_DETAILS_FAIL,
             payload: [],
-            error: error.response && error.response.data.mesagge 
-                ? error.response.data.mesagge 
-                : error.mesagge
+            error: error.mesagge
         })
 
     }

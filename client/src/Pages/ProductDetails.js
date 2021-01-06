@@ -8,22 +8,20 @@ import { getProductDetails } from '../actions/actions';
 function ProductDetails(props){
 
     const dispatch = useDispatch();
-    const { id, category} = props.match.params;
+    const id = props.match.params.id;
     const productDetails = useSelector((state) => state.productDetails);
     const { loading, product, error} = productDetails;
-    console.log(productDetails)
 
     useEffect(() => {
-        dispatch(getProductDetails(id, category))
-    }, [dispatch, id, category])
-   
+        dispatch(getProductDetails(id))
+    }, [dispatch, id])
 
     return (
         <>
             {loading ? (
                 <h1 className="product-pages">loading...</h1>
             ) : error ? (
-                <h1 className="product-pages">{error}</h1>
+                <h1 className="product-pages">error</h1>
             ) : (
                 <div className="product-details-container">
                     <div className="product-details-grid">

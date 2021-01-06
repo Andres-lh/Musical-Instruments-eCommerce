@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Styles/ProductPages.css';
 import ProductCard from '../Components/ProductCard';
-import { connect } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { getProducts } from '../actions/actions';
 
-function Studio(props) {
-    const { products, loading, error } = props;
+function Studio() {
+    
+    const dispatch = useDispatch();
+    const productList = useSelector((state) => state.productList)
+    const {products, loading, error} = productList;
+    
+    useEffect(() => {
+        dispatch(getProducts());
+    }, [dispatch]);
  
     return (
         <>
@@ -29,12 +36,8 @@ function Studio(props) {
                 </div>
             )}
         </>
+            
     );
 }
 
-const mapStateToProps = (state) => {
-	return state.productList;
-};
-
-
-export default connect(mapStateToProps, getProducts)(Studio);
+export default Studio;
