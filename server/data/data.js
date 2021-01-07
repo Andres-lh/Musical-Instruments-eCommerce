@@ -34,7 +34,7 @@ const data = {
             description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
             rating: 4.5,
             numReviews:12,
-            inStock: 10
+            inStock: 0
         },
         {
             name: "Epiphone les paul standard",

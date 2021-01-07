@@ -22,6 +22,7 @@
     min-width: 25rem;
 }
 
+
 .product-details > h1 {
     font-size: 3rem;
 }
@@ -40,23 +41,53 @@
 .product-details > h2 > span {
     font-family: sans-serif;
     font-weight: 300;
+}   
+
+.product-available{
+    color: green;
+    font-weight: 900;
+    font-size: 1.4rem;
+    margin: 1rem 0;
 }
 
+.product-unavailable{
+    color: rgb(187, 33, 33);
+    font-weight: 900;
+    font-size: 1.4rem;
+    margin: 2rem 0;
+}
 .product-details-btns {
     display: flex;
     align-items: center;
-    margin: 2rem 0;
+    margin: 1.5rem 0;
 }
 
 .product-details-btns input {
     height: 2rem;
     width: 2.5rem;
+    margin-right: 5%;
 }
 
 input[type="number"] {
     text-align: center;
     font-weight: 600;
   }
+
+.btn-red {
+    font-size: 1.2rem;
+    padding: 0.7rem 1.5rem;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 1px -2px 19px -5px rgba(0,0,0,0.3);
+    
+}
+
+.btn-red:hover {
+    transform: scale(1.03);
+}
 
 @media screen and (max-width: 960px){
 

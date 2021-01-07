@@ -22,7 +22,7 @@ function App() {
                <Navbar/>
                <Switch>
                     <Route exact path='/' component={Home}/>
-                    <Route  exact path='/cart' component={Cart}/>
+                    <Route  exact path='/cart/:id?' component={Cart}/>
                     <Route exact path='/guitars' component={Guitars}/>
                     <Route exact path='/basses' component={Basses}/>
                     <Route exact path='/drums' component={Drums}/>
