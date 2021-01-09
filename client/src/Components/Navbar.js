@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom';
 import { Link as LinkScroll  } from 'react-scroll';
 import "./Styles/Navbar.css";
 import Dropdown from './Dropdown';
+import { useSelector } from "react-redux";
 
 function Navbar() {
+    const cart = useSelector(state => state.cart)
+    const { cartItems } = cart;
     const [click, setClick] =  useState(false);
     const [dropdown, setDropdown] = useState(false);
 
@@ -66,6 +69,9 @@ function Navbar() {
                     <li className="nav-item">
                         <Link to="/cart" className="nav-links" onClick={closeMobileMenu}>
                             <i class="fas fa-shopping-cart"></i>
+                            {cartItems.length > 0 && (
+                                <span className="nav-badge">{cartItems.length}</span>
+                            ) }
                         </Link>
                     </li>
                     <li className="nav-item">

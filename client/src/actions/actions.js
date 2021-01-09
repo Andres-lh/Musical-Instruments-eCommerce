@@ -7,6 +7,8 @@ import {
     PRODUCT_DETAILS_SUCCESS,
     PRODUCT_DETAILS_FAIL,
     CART_ADD_ITEM,
+    CART_REMOVE_ITEM
+    
 } from "./constants";
 
 export const getProducts = () => async (dispatch) =>{
@@ -59,9 +61,18 @@ export const addToCart = (id, quantity) => async(dispatch, getState) =>{
             image: data.image,
             price: data.price, 
             inStock: data.inStock,
-            productId: data._id,
+            product: data._id,
             quantity,
         }
     });
     localStorage.setItem('items', JSON.stringify(getState().cart.cartItems) )
+}
+
+export const removeItem= (id) => (dispatch, getState) => {
+    dispatch({
+        type: CART_REMOVE_ITEM,
+        payload : id
+    });
+
+    localStorage.setItem('items', JSON.stringify(getState().cart.cartItems))
 }

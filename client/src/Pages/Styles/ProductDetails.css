@@ -63,14 +63,14 @@
 }
 
 .product-details-btns input {
-    height: 2rem;
-    width: 2.5rem;
     margin-right: 5%;
 }
 
 input[type="number"] {
     text-align: center;
     font-weight: 600;
+    height: 2rem;
+    width: 2.5rem;
   }
 
 .btn-red {
