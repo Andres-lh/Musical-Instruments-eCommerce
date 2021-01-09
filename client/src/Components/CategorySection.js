@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 
-function Products() {
+function CategorySection() {
 
     Aos.init({duration : 2000})
 
@@ -57,4 +57,4 @@ function Products() {
     )
 }
 
-export default Products;
+export default CategorySection;

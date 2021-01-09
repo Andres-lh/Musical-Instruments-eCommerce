@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Styles/Slider.css";
 import { Link } from "react-router-dom";
-import { Button } from "./Button";
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 
@@ -50,7 +49,9 @@ function Slider({slides}) {
                 {slides.map((slide, index) => {
                     return ( 
                         <div className={index === current ? "slide active" : "slide"} key={index}>
-                            {index ===  current && (<img src={slide.image} alt=""  className="slide-image" /> )}  
+                            <Link to={`/products/${slide._id}`}>
+                                {index ===  current && (<img src={slide.image} alt=""  className="slide-image" /> )}
+                            </Link>
                         </div>
                     );
                 })}

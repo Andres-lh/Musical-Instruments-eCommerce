@@ -16,7 +16,7 @@
 }
 
 .product-details-grid img {
-    height: auto;
+    height: 33rem;
     width: 30rem;
     object-fit: contain;
     min-width: 25rem;

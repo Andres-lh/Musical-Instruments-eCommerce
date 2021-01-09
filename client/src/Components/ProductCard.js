@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect} from "react";
 import "./Styles/ProductCard.css";
 import { Link } from "react-router-dom";
 import Rating from './Rating';
@@ -24,9 +24,9 @@ function ProductCard(props) {
                     <span>{`$ ${product.price}`}</span>
                 </div>
             </div>
-            <Link to="/">
-                <button className="card-button" >
-                    Add to cart
+            <Link to={`/products/${product._id}`}>
+                <button className="card-button">
+                    Quick view
                 </button>
             </Link>
         </div>

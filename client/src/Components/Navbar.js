@@ -75,7 +75,7 @@ function Navbar() {
                         </Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/account" className="nav-links" onClick={closeMobileMenu}>
+                        <Link className="nav-links" onClick={closeMobileMenu}>
                             <i class="fas fa-user"></i>
                         </Link>
                         
