@@ -8,6 +8,9 @@
     "start": "node server/server.js ",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
   },
+  "engines": {
+    "node": "10.16.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Andres-lh/Music-Instruments-eCommerce.git"
