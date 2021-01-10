@@ -82,7 +82,7 @@ const data = {
         },
         {
             name: "Acoustic Guitar Fender Sunburst",
-            image: "https://cdn11.bigcommerce.com/s-7i8y5wa/images/stencil/1280x1280/products/29433/916303/FEN-0961090032-2__68879.1585613686.jpg?c=2",
+            image: "https://media.guitarcenter.com/is/image/MMGS7//CC-60SCE-Concert-Acoustic-Electric-Guitar-Natural/L45217000001000-00-1600x1600.jpg",
             category: "guitars",
             price: 320,
             description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto dolor pariatur distinctio porro officia aspernatur nulla, perferendis molestiae, vero incidunt magni. Esse consequuntur iusto adipisci dolorem cumque unde et ad!",
