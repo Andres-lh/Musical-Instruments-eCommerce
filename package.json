@@ -6,10 +6,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server/server.js ",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install npm && run build"
-  },
-  "engines": {
-    "node": "12.18.1"
+    "build": "cd client && npm run build", 
+    "install-client": "cd client && npm install",
+    "heroku-postbuild": "npm run install-client && npm run build"
   },
   "repository": {
     "type": "git",

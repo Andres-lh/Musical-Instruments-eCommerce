@@ -16,6 +16,10 @@ mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost:27017/store', {
 const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server at http://localhost:${port}`))
 
+if(process.env.NODE_ENV === "production") {
+    app.use(express.static('client/build'))
+}
+
 app.use('/api/users', userRouter);
 app.use('/api/products', productRouter)
 
