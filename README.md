@@ -6,6 +6,7 @@ A fully responsive musical instruments ecommerce built with MERN stack and Redux
 
 - **Fontend:** React, React Router, Redux, Redux Thunk, Axios.
 - **Backend:** Express, Express Async Handler, Mongoose.
+- **Database:** MongoDB.
 
 ------------
 
