@@ -2,10 +2,15 @@ import express from 'express';
 import userRouter from './routes/userRoutes.js';
 import mongoose from 'mongoose';
 import productRouter from './routes/productRoutes.js';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 const app = express();
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-mongoose.connect(process.env.MONGODB_URL || 'mongodb://localhost:27017/store', {
+const MongoURL = 'mongodb+srv://admin:civilwar1@cluster0.oqyuz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+
+mongoose.connect(process.env.MONGODB_URL || MongoURL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true
@@ -27,9 +32,13 @@ app.use((err, req, res, next) =>{
   res.status(500).send({message: err.message})
 });
 
-app.get('/', (req, res) => {
-    res.send('Server is ready');
+app.get('/*', (req, res) =>{
+    res.sendFile(path.join(__dirname, '../client/public/index.html'));
+    if(err){
+        res.status(500).send(err);
+    }
 })
+
 
 
 

@@ -8,6 +8,7 @@ import 'aos/dist/aos.css'
 function Section(props) {
     Aos.init({ duration: 1000 });
     const { products } = props;
+    console.log(props)
     return (
         <div data-aos="fade-up" className="section-container">
             <h1 className="section-title">Featured items</h1>
