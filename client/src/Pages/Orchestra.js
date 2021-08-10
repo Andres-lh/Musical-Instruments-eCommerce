@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Styles/ProductPages.css';
 import ProductCard from '../Components/ProductCard';
 import { useDispatch, useSelector } from 'react-redux';
@@ -7,11 +7,14 @@ import { getProducts } from '../actions/actions';
 function Orchestra() {
     
     const dispatch = useDispatch();
-    const productList = useSelector((state) => state.productList)
-    const {products, loading, error} = productList;
-    
+    const {products, loading, error} = useSelector((state) => state.productList);
+    const [filter, setFilter] = useState({
+        category: 'orchestra',
+        sort: ''
+    })
+   
     useEffect(() => {
-        dispatch(getProducts());
+        dispatch(getProducts(filter.category, filter.sort));
     }, [dispatch]);
  
     return (
@@ -24,7 +27,7 @@ function Orchestra() {
                 <div className="product-pages">
                     <h1 className="product-title">Orchestra</h1>
                     <div className="products-container">
-                        {products.orchestra.map((product) => {
+                        {products.map((product) => {
                             return (
                                 <ProductCard
                                     key={product.id}

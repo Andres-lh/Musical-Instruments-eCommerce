@@ -5,8 +5,7 @@ import { Button } from '../Components/Button';
 import './Styles/Cart.css';
 
 function Cart(props) {
-    const cart = useSelector(state => state.cart);
-    const { cartItems } = cart;
+    const { cartItems } = useSelector(state => state.cart);
     const id = props.match.params.id;
     const quantity = props.location.search ? Number(props.location.search.split('=')[1]) : 1;
     const dispatch = useDispatch();

@@ -11,15 +11,16 @@ import {
     
 } from "./constants";
 
-export const getProducts = () => async (dispatch) =>{
+export const getProducts = (category, sort) => async (dispatch) =>{
     dispatch({
         type: PRODUCTS_REQUEST
     });
     try {
-        const { data } = await axios.get('/api/products');
+        const { data } = await axios.get(`/api/products?category=${category}&${sort}`);
+        console.log(data)
         dispatch({
             type: PRODUCTS_SUCCESS,
-            payload: data,
+            payload: data.products,
         });
     } catch (error){
         dispatch({
@@ -39,7 +40,7 @@ export const getProductDetails = (id) => async (dispatch) => {
         const { data } = await axios.get(`/api/products/${id}`);
         dispatch({
             type: PRODUCT_DETAILS_SUCCESS,
-            payload: data
+            payload: data.product
         })
 
     } catch (error) {
@@ -54,14 +55,15 @@ export const getProductDetails = (id) => async (dispatch) => {
 
 export const addToCart = (id, quantity) => async(dispatch, getState) =>{
     const {data} = await axios.get(`/api/products/${id}`);
+    console.log(data)
     dispatch({
         type: CART_ADD_ITEM,
         payload: {
-            name: data.name,
-            image: data.image,
-            price: data.price, 
-            inStock: data.inStock,
-            product: data._id,
+            name: data.product.name,
+            image: data.product.image,
+            price: data.product.price, 
+            inStock: data.product.inStock,
+            product: data.product._id,
             quantity,
         }
     });

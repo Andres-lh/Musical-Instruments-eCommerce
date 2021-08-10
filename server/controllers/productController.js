@@ -4,12 +4,12 @@ import ProductUtils from '../utils/productsUtils.js';
 
 export const getProducts = async (req, res, next) => {
     try {
-        const features = new ProductUtils(Product.find(), req.query)
+        const queryObject = new ProductUtils(Product.find(), req.query)
             .filtering()
             .sorting()
-            //.paginating
+            //.paginating 
 
-        const products = await features.query;
+        const products = await queryObject.query;
 
         res.json({
             status: 'success',

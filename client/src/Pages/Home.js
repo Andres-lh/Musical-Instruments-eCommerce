@@ -11,13 +11,14 @@ import { getProducts } from "../actions/actions";
 
 function Home() {
     const dispatch = useDispatch();
-    const productList = useSelector((state) => state.productList)
-    const {products, loading, error} = productList;
+    const {products, loading, error} = useSelector((state) => state.productList)
 
-    useEffect(() => {
-        dispatch(getProducts());
-    }, [dispatch]);
+    const category = 'featured'
+    const sort = ''
     
+    useEffect(() => {
+        dispatch(getProducts(category, sort));
+    }, [dispatch]);
     return (
         <>
         {loading ? (
@@ -29,7 +30,7 @@ function Home() {
             <Hero />
             <Section products={products}/>
             <HomeOffers />
-            <Slider slides={products.featured} />
+            <Slider slides={products} />
             <CategorySection />
             </>
         )}

@@ -8,12 +8,12 @@ import 'aos/dist/aos.css'
 function Section(props) {
     Aos.init({ duration: 1000 });
     const { products } = props;
-    console.log(props)
+    console.log(products)
     return (
         <div data-aos="fade-up" className="section-container">
             <h1 className="section-title">Featured items</h1>
             <div className="section-grid">
-                {products.featured.map((product) => {
+                {products.map((product) => {
                     return (
                         <ProductCard
                             key={product.id}

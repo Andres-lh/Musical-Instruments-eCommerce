@@ -8,8 +8,8 @@ function ProductDetails(props){
 
     const dispatch = useDispatch();
     const id = props.match.params.id;
-    const productDetails = useSelector((state) => state.productDetails);
-    const { loading, product, error} = productDetails;
+    const { loading, product, error} = useSelector((state) => state.productDetails);
+
     const [ quantity, setQuantity] = useState(1)
 
     useEffect(() => {
