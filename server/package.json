@@ -5,10 +5,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server/server.js",
-    "build": "cd client && npm run build",
-    "install-client": "cd client && npm install",
-    "heroku-postbuild": "npm run install-client && npm run build"
+    "start": "nodemon src/server.js"
   },
   "repository": {
     "type": "git",

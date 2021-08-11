@@ -15,6 +15,10 @@ app.use(express.json());
 app.use('/api/users', userRouter);
 app.use('/api/products', productRouter)
 
+app.get('/', (req, res) => {
+    res.send('Musical eCommerce API');
+})
+
 
 //Database connection
 connectDb();
