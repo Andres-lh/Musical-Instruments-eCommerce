@@ -1,0 +1,12 @@
+@mixin container($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin abs-position ($top, $right, $bottom, $left) {
+    position: absolute; 
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+ }

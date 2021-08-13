@@ -1,7 +1,8 @@
-$base-color: blue;
-$color: rgba(black, 0.88);
+@use 'components/Navbar' ;
 
-body {
-    background-color: $base-color;
-    color: $color;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: black;
 }
