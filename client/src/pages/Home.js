@@ -1,6 +1,17 @@
+import { useRef, useState, useEffect } from 'react'
+
+import Hero from '../components/Hero';
+import Section from '../components/Section';
+
+
 const Home = () => {
+
     return(
-        <h1>Home</h1>
+        <div>
+            <div  className="hero">hero</div>
+            <div  className="section">section</div>
+        </div>
+        
     )
 }
 

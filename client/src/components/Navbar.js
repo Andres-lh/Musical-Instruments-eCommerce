@@ -3,10 +3,11 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
+    const [scrolled, setScrolled] = useState(true)
 
     const handleClick = () => setClick(!click);
     return(
-        <nav className="nav" >
+        <nav className={scrolled ? 'nav scrolled': 'nav'} >
             <Link to="/" className="nav-logo">
                 Instruments
                 <i class="fas fa-guitar"></i>
@@ -14,7 +15,7 @@ const Navbar = () => {
             <div className="menu-icon" onClick={handleClick}>
                 <i className={click ? "fas fa-times" : "fas fa-bars"}/>
             </div>
-            <ul className={click ? "nav-menu active" : "nav-menu" }>
+            <ul className={click ? "nav-menu mobile" : "nav-menu" }>
                 <li className="nav-item">
                     <Link to="#" className="nav-links">Products </Link>
                 </li>
