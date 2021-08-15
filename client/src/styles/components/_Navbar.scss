@@ -9,10 +9,10 @@
     padding: 0 10vw;
     color:rgb(255, 255, 255);
     z-index: 1;
-    font-family: $font-test;
+    font-family: $font-crimson;
     
     &.scrolled {
-        background-color: black;
+        background: linear-gradient(90deg, rgb(26, 26, 29) 20%, rgb(37, 37, 49) 100%);
     }
     
     .nav-logo {
@@ -34,7 +34,7 @@
     .nav-menu {
         display: flex;
         list-style: none;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
 
         .nav-item {
             margin: 0.5rem;
@@ -51,7 +51,7 @@
                 }
 
                 &:hover{
-                    background-color:  #4a4b4d;
+                    background-color:  #484c5a;
                     border-radius: 4px;
                     transition: all 0.2s ease-out;
                 }
@@ -104,8 +104,9 @@
             font-size: 1.3rem;
         }
           
-        .fa-bars {
-            font-size: 1.5rem;
+        .fa-bars,
+        .fa-times {
+            font-size: 1rem;
         }
     }
 }

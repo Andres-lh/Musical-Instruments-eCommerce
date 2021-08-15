@@ -14,7 +14,8 @@ module.exports = {
         alias: {
             '@components': path.resolve(__dirname, 'src/components/'),
             '@styles': path.resolve(__dirname, 'src/styles/'),
-            '@pages': path.resolve(__dirname, 'src/pages/')
+            '@pages': path.resolve(__dirname, 'src/pages/'),
+            '@images': path.resolve(__dirname, 'src/assets/images/')
         }
     },
     mode: 'development',
@@ -46,7 +47,7 @@ module.exports = {
             }, 
             {
                 type: 'asset',
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                test: /\.(png|jpg|jpeg|mp4)$/i,
             }
         ]
     },
@@ -61,6 +62,7 @@ module.exports = {
         new Dotenv()
     ],
     devServer: {
+        historyApiFallback: true,
         contentBase: path.join(__dirname, 'dist'),
         port: 3000
     }

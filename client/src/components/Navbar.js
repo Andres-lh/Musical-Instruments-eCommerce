@@ -3,9 +3,20 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
-    const [scrolled, setScrolled] = useState(true)
+    const [scrolled, setScrolled] = useState(false)
 
     const handleClick = () => setClick(!click);
+
+    const changeNavbar = () => {
+        if(window.scrollY >= 200){
+            setScrolled(true)
+        } else {
+            setScrolled(false)
+        }
+    }
+
+    window.addEventListener('scroll', changeNavbar);
+
     return(
         <nav className={scrolled ? 'nav scrolled': 'nav'} >
             <Link to="/" className="nav-logo">

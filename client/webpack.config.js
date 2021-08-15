@@ -50,9 +50,12 @@ module.exports = {
             }, 
             {
                 type: 'asset',
-                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                test: /\.(png|jpg|jpeg)$/i,
             }
         ]
+    },
+    devServer: {
+        historyApiFallback: true,
     },
     plugins: [
         new CleanWebpackPlugin(),
