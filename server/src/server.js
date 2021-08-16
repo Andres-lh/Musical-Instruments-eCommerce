@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import userRouter from './routes/userRouter.js';
 import productRouter from './routes/productRouter.js';
 import dotenv from 'dotenv';
@@ -10,6 +11,7 @@ dotenv.config();
 
 
 app.use(express.json());
+app.use(cors());
 
 //Routes
 app.use('/api/users', userRouter);
