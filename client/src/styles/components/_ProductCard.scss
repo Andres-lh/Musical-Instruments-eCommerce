@@ -1,0 +1,83 @@
+@use '../abstracts' as *;
+
+.productCard {
+    position: relative;
+    @include size(380px, 250px);
+    border-radius: 0.5rem;
+    margin: 1rem;
+    align-items: center;
+
+    &:hover {
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+        transform: scale(1.02);
+        transition: 0.3s ease-in;
+    }
+
+    &:hover::before {
+        opacity: 1;
+    }
+
+    &-image {
+        @include size(300px, auto);
+        img {
+            @include size(100%, 100%);
+            object-fit: contain;
+            object-position: center;
+        }
+    }
+
+    &-body {
+        @include size(80px, 100%);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 10px 10px;
+        background-color: rgb(247, 247, 247);
+        line-height: 20px;
+        border-radius: 0.5rem;
+
+        .product-name {
+            font-size: 1rem;
+            color: black;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        .product-price {
+            width: 70px;
+            text-align: center;
+        }
+    }
+
+        
+    &-button {
+        background-color: rgba(248, 21, 21, 0.6);
+        position: relative;
+        font-size: 20px;
+        padding: 0.5rem 0.5rem;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        z-index: 3;
+        opacity: 0;
+        transform: translateY(-50px);
+        transition: 0.7s all;
+    }
+
+    &:hover &-button{
+        opacity: 1;
+        transform: translateY(-210px);
+    }
+
+    &-button:hover {
+        transition: 0.3s ease-in-out;
+        background-color: rgb(243, 10, 10);
+        box-shadow: rgba(214, 3, 3, 0.3) 0px 0px 0px 3px;
+    }
+} 

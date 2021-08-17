@@ -11,7 +11,7 @@ const Section = () => {
     
     console.log(products);
 
-    const category = 'guitars';
+    const category = 'featured';
     const sort = '';
     const search = '';
 
@@ -21,7 +21,7 @@ const Section = () => {
     
 
     return(
-        <div className="section-container">
+        <div className="section">
             <h1>Featured items</h1>
             <div className="section-grid">
                 {products.map((product) => {

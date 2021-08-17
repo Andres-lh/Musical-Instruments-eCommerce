@@ -10,7 +10,7 @@ const ProductCard = ({ product }) => {
             </div>
 
             <div className="productCard-body">
-                <div className="productCard-info">
+                <div>
                     <Link to={`/`} className="product-name">
                         <p>{product.name}</p>
                     </Link>

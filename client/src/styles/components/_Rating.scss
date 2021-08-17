@@ -1,0 +1,11 @@
+.rating {
+    span {
+        color: #f0c040;
+        margin: 0.1rem;
+
+        &:last-child {
+            color: black;
+            margin-left: 10px;
+        }
+    }
+}

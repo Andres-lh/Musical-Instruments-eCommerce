@@ -1,8 +1,7 @@
 @use '../abstracts' as *;
 
 .hero {
-    height: 100vh;
-    width: 100%;
+    @include size(100vh, 100%);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,8 +26,7 @@
     input {
         background-color: rgb(59, 58, 58, 0.7);
         border: rgba(206, 201, 201, 0.8) solid 3px;
-        width: 30rem;
-        height: 3.5rem;
+        @include size(3.5rem, 30rem);
         border-radius: 20px;
         color: white;
         margin-top: 2.5rem;
@@ -37,7 +35,7 @@
         padding: 1rem;
         text-align: center;
         outline: none;
-        font-family: $font-input;
+        font-family: $font-main;
         font-style: italic;
         
         &::placeholder {
@@ -55,8 +53,7 @@
         }
 
         input {
-            width: 13rem;
-            height: 0.5rem;
+            @include size(0.5rem, 13rem);
             padding: 0.8rem;
             font-size: 0.8rem;
             margin-top: 0;
