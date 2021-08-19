@@ -18,7 +18,7 @@
         @include size(100%, 100%);
 
         &-leftside {
-            width: 50%;
+            @include size(100vh, 50%);
             display: flex;
             background-image: url('@images/black-paint.png');
             background-position: center;
@@ -42,7 +42,7 @@
         }
         
         &-rightside {
-            width: 50%;
+            @include size(100vh, 50%);
             display: flex;
             justify-content: center;
             align-items: center;

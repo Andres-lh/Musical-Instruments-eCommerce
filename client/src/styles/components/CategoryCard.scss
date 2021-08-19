@@ -1,0 +1,15 @@
+@use '../abstracts' as *;
+
+.categoryCard {
+    height: 13rem;
+    width: 20rem;
+    transition: 0.5 ease-in;
+
+    img {
+        @include size(100%, 100%);
+    }
+
+    &:hover {
+        box-shadow: 2px 2px 40px -1px rgb(37, 135, 247);
+    }
+}
