@@ -1,7 +1,8 @@
-import { useRef, useState, useEffect } from 'react'
 
 import Hero from '../components/Hero';
 import Section from '../components/Section';
+import HomeOffers from '../components/HomeOffers';
+import Slider from '../components/Slider';
 
 
 const Home = () => {
@@ -10,6 +11,8 @@ const Home = () => {
         <div>
             <Hero />
             <Section />
+            <HomeOffers />
+            <Slider />
         </div>
         
     )

@@ -7,9 +7,6 @@ import ProductCard from './ProductCard';
 const Section = () => {
     const dispatch = useDispatch();
     const { products } = useSelector((state) => state.products)
-    
-    
-    console.log(products);
 
     const category = 'featured';
     const sort = '';

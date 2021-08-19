@@ -1,0 +1,138 @@
+@use '../abstracts' as *;
+
+.slider {
+    @include size(100vh, 100%);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    overflow: hidden;
+
+    padding-bottom: 10rem;
+
+    &_title {
+        font-size: 1.5rem;
+    }
+
+    &_container {
+        display: flex;
+        @include size(100%, 100%);
+
+        &-leftside {
+            width: 50%;
+            display: flex;
+            background-image: url('@images/black-paint.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            justify-content: center;
+            align-items: center;
+
+            &-name {
+                width: 19rem;
+                word-wrap: break-word;
+                .slide-name {
+                    font-family: 'Big Shoulders Stencil Text', cursive;
+                    font-weight: 900;
+                    font-size: 2rem;
+                    color: rgb(255, 255, 255);   
+                }
+            }
+
+            
+        }
+        
+        &-rightside {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+            &-images {
+                @include size(30rem, 30rem);
+
+                .slide-image {
+                    @include size(100%, 100%);
+                    object-fit: cover;
+                    object-position: center;
+                    
+                    @keyframes animation {
+                        50% {
+                            transform: translateY(-10px);
+                        }
+                    
+                        100% {
+                            transform: translateY(-20px);
+                        }
+                    }
+
+                    &:hover {
+                        transform: translateY(-3px);
+                        animation-name: animation;
+                        animation-duration: 1s;
+                        animation-delay: 0.3s;
+                        animation-timing-function: linear;
+                        animation-iteration-count: infinite;
+                        animation-direction: alternate;
+                    }
+                }
+            }
+
+            .arrows {
+                font-size: 2.3rem;
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }  
+        }
+    }
+
+    @include responsive(960px){
+        .slide-name {
+            font-size: 1.4rem;
+        }
+    }
+
+    @include responsive(860px){
+        &_container {
+            flex-direction: column-reverse;
+
+            &-leftside {
+                width: 100%;
+                height: 13rem;
+                position: absolute;
+                margin-top: 20rem;
+
+                &-name {
+                    width: 10rem;
+                    .slide-name {
+                        font-size: .8rem;
+                    }
+                }   
+            }
+
+            &-rightside {
+                margin-top: 1.5rem;
+                width: 100%;
+                height: 23rem;
+                margin-bottom: 10rem;
+
+                &-images{
+                    @include size(20rem, 20rem);
+                }
+            }
+        }
+    }
+
+    @include responsive(410px) {
+        &_container {
+            &_leftside {
+                width: 100%;
+                height: 11rem;
+                position: absolute;
+            }
+        }
+    }
+}
