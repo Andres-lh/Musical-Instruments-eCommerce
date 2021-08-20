@@ -12,7 +12,7 @@
     font-family: $font-crimson;
     
     &.scrolled {
-        background: linear-gradient(90deg, rgb(26, 26, 29) 20%, rgb(37, 37, 49) 100%);
+        background: $nav-background;
     }
     
     .nav-logo {
@@ -60,7 +60,7 @@
     }
 
     @include responsive(960px) {
-        background: linear-gradient(90deg, rgb(26, 26, 29) 20%, rgb(37, 37, 49) 100%);
+        background: $nav-background;
         .nav-menu { 
             flex-direction: column;
             @include size(90vh, 100%);
@@ -69,7 +69,7 @@
             left: -100%;
 
             &.mobile {
-                background: linear-gradient(90deg, rgb(26, 26, 29) 20%, rgb(37, 37, 49) 100%);
+                background: $nav-background;
                 left: 0;
                 transition: all 0.5s ease-in-out;
                 z-index: 1;

@@ -1,0 +1,105 @@
+@use '../abstracts' as *;
+
+.footer {
+    @include size(auto, 100%);
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    padding: 4rem 0 2rem 0;
+    justify-content: center;
+    align-items: center;
+    background: $nav-background;
+    color: rgb(230, 228, 228);
+
+    &_links {
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 3rem;
+        
+
+        &-subscription {
+            text-align: center;
+            margin-bottom: 2rem;
+
+            h2{
+                padding: 1.5rem 0;
+                font-size: 1.8rem;
+            }
+
+            &-input {
+                input {
+                    padding: 0.5rem;
+                    border: none;
+                    margin: 0.5rem;
+                    width: 18rem;
+                }
+            }
+        }
+        
+        &-items {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+            
+            h2 {
+                margin-bottom:1rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                font-size: 17px;
+                margin: 0.4rem 0;
+
+                &:hover {
+                    color: rgb(119, 119, 156);
+                }
+            }
+        }
+
+    }
+
+
+    &_socialmedia {
+        text-align: center;
+        justify-content: center;
+
+        &-icons {
+            margin: 1.4rem 0;
+            a{
+                margin: 0 1rem;
+                font-size: 1.7rem;
+                color: rgb(207, 207, 207);
+
+                &:hover {
+                    transform: scale(1.1);
+                    color: blue;
+                }
+            }
+        }
+    }
+
+    @include responsive(900px) {
+        &_links {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+
+            &-items {
+                align-items: center;
+                text-align: center;
+                margin-bottom: 2rem;
+                
+                h2 {
+                    margin-bottom: 0.5rem;
+                }
+            }
+        }
+    }
+
+
+}
