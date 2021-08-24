@@ -8,7 +8,7 @@ const Footer = () => {
                     <h2>Subscribe to receive our best offers</h2>
                     <form className="footer_links-subscription-input">
                         <input type="email" name="email" placeholder="Enter your email"/>
-                        <button className="input-button">Suscribe</button>
+                        <button className="btn-small btn-transparent">Suscribe</button>
                     </form>
                 </div>
                 <div className="footer_links-items">

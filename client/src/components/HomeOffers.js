@@ -4,7 +4,7 @@ const HomeOffers = () => {
             <div className="homeOffers_background">
                 <div className="homeOffers_background-content">
                     <h1>Check out our special offers</h1>
-                    <button>Learn more</button>
+                    <button className="btn-medium btn-white">Learn more</button>
                 </div>
                 
             </div>

@@ -1,13 +1,22 @@
-import image from '../assets/images/guitar.jpeg'
-
+import { Link } from 'react-router-dom'
 const Hero = () => {    
 
     return(
         <div className="hero">
-            {/*<video src={Video} autoPlay loop muted/>*/}
             <h1>Are you ready to rock?</h1>
             <form>
-                <input type="text" placeholder="Find your next musical instrument"/>
+                <div className="hero_input">
+                    <div className="hero_input-search">
+                        <input type="text" placeholder="Find your next musical instrument"/>
+                        <Link to="/">
+                        <   i class="fas fa-search"></i>
+                        </Link>
+                    </div>
+
+                </div>
+                
+                
+                
             </form>
             
         </div>

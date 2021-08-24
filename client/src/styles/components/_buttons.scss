@@ -1,0 +1,37 @@
+
+.btn {
+    display:inline-flex;
+    box-shadow: 0 .375em .313em -0.313em rgba(194, 193, 193, 0.8), inset 0 .063em rgba(255,255,255,.4), inset 0 -0.188em rgba(0,0,0,.15);
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-family: sans-serif;    
+}
+
+@mixin btn-size($height, $width, $fontSize) {
+    padding: $height $width;
+    font-size: $fontSize;    
+}
+
+@mixin button-theme($btn-color, $font-color) {
+    background-color: $btn-color;
+    color: $font-color;
+}
+
+.btn-small{
+    @extend .btn;
+    @include btn-size(0.4rem, 0.75rem, 17px);
+}
+
+.btn-medium{
+    @extend .btn;
+    @include btn-size(0.75rem, 1rem, 20px);
+}
+
+.btn-transparent {
+    @include button-theme(transparent, white)
+}
+
+.btn-white {
+    @include button-theme(white, black)
+}
