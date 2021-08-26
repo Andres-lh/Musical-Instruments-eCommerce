@@ -7,8 +7,6 @@ const Navbar = () => {
 
     const handleClick = () => setClick(!click);
 
-    
-
     const changeNavbar = () => {
         if(window.scrollY >= 200){
             setScrolled(true)

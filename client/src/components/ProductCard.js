@@ -4,14 +4,14 @@ const ProductCard = ({ product }) => {
     return(
         <div className="productCard">
             <div className="productCard-image">
-                <Link to={`/`}>
+                <Link to={`/products/${product._id}`}>
                     <img src={product.image} alt="" />
                 </Link>
             </div>
 
             <div className="productCard-body">
                 <div>
-                    <Link to={`/`} className="product-name">
+                    <Link to={`/products/${product._id}`} className="product-name">
                         <p>{product.name}</p>
                     </Link>
                     <Rating rating = {product.rating} numReviews = {product.numReviews} />

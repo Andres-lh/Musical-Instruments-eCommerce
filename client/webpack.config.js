@@ -11,14 +11,15 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
-        publicPath: "/",
+        publicPath: '/',
     },
     resolve: {
         extensions: ['.js', '.jsx'],
         alias: {
             '@components': path.resolve(__dirname, 'src/components/'),
             '@styles': path.resolve(__dirname, 'src/styles/'),
-            '@pages': path.resolve(__dirname, 'src/pages/')
+            '@pages': path.resolve(__dirname, 'src/pages/'),
+            '@images': path.resolve(__dirname, 'src/assets/images/')
         }
     },
     mode: 'production',
