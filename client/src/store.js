@@ -5,7 +5,11 @@ import reducers from './reducers';
 const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const INITIAL_STATE = {
-
+    cart: {
+        cartItems: localStorage.getItem('cartItems')
+            ? JSON.parse(localStorage.getItem('cartItems'))
+            : [],
+    }
 }
 
 const store = createStore(

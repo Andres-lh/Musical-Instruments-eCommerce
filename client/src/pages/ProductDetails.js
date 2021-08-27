@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Rating from '@components/Rating';
 import { useDispatch, useSelector } from 'react-redux';
 import { getProductDetails } from '../actions/productsActions';
@@ -7,20 +7,17 @@ const ProductDetails = (props) => {
 
     const dispatch = useDispatch();
     const id = props.match.params.id
-
     const { product } = useSelector(state => state.product);
-
-    const addToCart = () => {
-        console.log('add to cart')
-    }
-
-    const setQuantity = () => {
-        console.log('set')
-    }
+    const [quantity, setQuantity] = useState(1);
 
     useEffect( () => {
         dispatch(getProductDetails(id))
-    },[])
+    },[dispatch, id])
+
+    const addToCart = () => {
+        props.history.push(`/cart/${id}?qty=${quantity}`);
+        console.log('click', id)
+    }
 
     return(
         <>
