@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getProducts } from '../actions/productsActions';
 
 const useFetchProducts = (category, sort, search) => {
-    const [reqCategory, setReqCategory] = useState(null);
+    const [reqCategory, setReqCategory] = useState('category=' + category);
     const dispatch = useDispatch();
     const { products } = useSelector((state) => state.products);
 
@@ -11,10 +11,8 @@ const useFetchProducts = (category, sort, search) => {
 
         if(category === 'all'){
             setReqCategory('')
-        }else {
-            setReqCategory(`category=${category}`);
         }
-
+        
         dispatch(getProducts(reqCategory, sort, search));
 
     },[dispatch, reqCategory])
