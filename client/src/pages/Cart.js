@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, removeItem } from '../actions/cartActions';
+import { Link } from 'react-router-dom';
 
 const Cart = (props) => {
     const { cartItems } = useSelector(state => state.cart);
@@ -26,7 +27,7 @@ const Cart = (props) => {
                     <hr />
                     <h2>Your cart is empty</h2>
                     <div className="cart-btn">
-                        <button >Continue Shopping</button>
+                        <Link to="/">Continue Shopping</Link>
                     </div>
                     <hr />
                 </div>

@@ -4,6 +4,7 @@ import Footer from "@components/Footer";
 import ProductDetails from "./pages/ProductDetails";
 import Cart from "./pages/Cart";
 
+
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 

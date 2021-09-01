@@ -1,21 +1,16 @@
-import { useState, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { getProducts } from '../actions/productsActions';
 import ProductCard from './ProductCard';
+import useFetchProducts from '../hooks/useFetchProducts';
 
 
 const Section = () => {
-    const dispatch = useDispatch();
-    const { products } = useSelector((state) => state.products)
 
-    const category = 'featured';
-    const sort = '';
-    const search = '';
-
-    useEffect(() => {
-        dispatch(getProducts(category, sort, search));
-    },[dispatch])
+    const product = {
+        category: 'featured',
+        sort: '',
+        search: ''
+    }
     
+    const products = useFetchProducts(product.category, product.sort, product.search);
 
     return(
         <div className="section">
@@ -23,10 +18,7 @@ const Section = () => {
             <div className="section-grid">
                 {products.map((product) => {
                     return (
-                        <ProductCard
-                            key={product.id}
-                            product={product}
-                        ></ProductCard>
+                        <ProductCard key={product.id} product={product} />
                     );
                 })}
             </div>

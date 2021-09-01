@@ -1,22 +1,21 @@
-import { useState, useEffect} from 'react';
-import { getProducts } from '../actions/productsActions';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
+import useFetchProducts from '../hooks/useFetchProducts';
+
 
 const Slider = () => {
 
-    const dispatch = useDispatch();
-    const { products } = useSelector((state) => state.products);
+    const product = {
+        category: 'featured',
+        sort: '',
+        search: ''
+    }
+    
+    const products = useFetchProducts(product.category, product.sort, product.search);
     const [current, setCurrent] = useState(0);
     const length = products.length;
 
-    const category = 'featured';
-    const sort = '';
-    const search = '';
 
-    useEffect(() => {
-        dispatch(getProducts(category, sort, search));
-    },[dispatch])
 
     if(!Array.isArray(products) || products.length <= 0){
         return null;
@@ -29,9 +28,6 @@ const Slider = () => {
     const prevSlide = () =>{
         setCurrent(current === 0 ? length - 1 : current - 1)
     }
-
-    
-
 
     return (
         <div className="slider">
