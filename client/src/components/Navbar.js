@@ -1,12 +1,17 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const Navbar = () => {
     const [click, setClick] = useState(false);
-    const [scrolled, setScrolled] = useState(false)
+    const [scrolled, setScrolled] = useState(false);
+    const { cartItems } = useSelector(state => state.cart);
 
     const handleClick = () => setClick(!click);
 
+    const itemsCount = () => {
+        return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
+    }
     const changeNavbar = () => {
         if(window.scrollY >= 200){
             setScrolled(true)
@@ -34,7 +39,9 @@ const Navbar = () => {
                     <Link to="#" className="nav-links">About</Link>
                 </li>
                 <li className="nav-item">
-                    <Link to="/cart"  className="nav-links"><i className="fas fa-shopping-cart"></i></Link>
+                    <Link to="/cart"  className="nav-links"><i className="fas fa-shopping-cart" /> 
+                        {cartItems.length > 0 && (<span>{cartItems.length}</span>)}
+                    </Link>
                 </li>
                 <li className="nav-item"  >
                     <Link to="#" className="nav-links"><i className="fas fa-user" /></Link>

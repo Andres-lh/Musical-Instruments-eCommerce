@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Rating from '@components/Rating';
 import { useDispatch, useSelector } from 'react-redux';
-import { getProductDetails } from '../actions/productsActions';
+import { getProductDetails } from '@actions/productsActions';
 
 const ProductDetails = (props) => {
 

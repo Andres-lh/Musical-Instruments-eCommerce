@@ -1,5 +1,5 @@
-import ProductCard from './ProductCard';
-import useFetchProducts from '../hooks/useFetchProducts';
+import ProductCard from '@components/ProductCard';
+import useFetchProducts from '@hooks/useFetchProducts';
 
 
 const Section = () => {

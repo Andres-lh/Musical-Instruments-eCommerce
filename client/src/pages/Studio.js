@@ -1,5 +1,5 @@
 import ProductCard from "@components/ProductCard";
-import useFetchProducts from "../hooks/useFetchProducts";
+import useFetchProducts from "@hooks/useFetchProducts";
 
 const Studio = () => {
     const product = {

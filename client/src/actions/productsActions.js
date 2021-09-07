@@ -1,5 +1,5 @@
-import { FETCH_PRODUCTS, PRODUCTS_DETAILS_REQUEST } from '../constants/actionTypes';
-import * as api from '../api/api';
+import { FETCH_PRODUCTS, PRODUCTS_DETAILS_REQUEST } from '@constants/actionTypes';
+import * as api from '@api/api';
 
 export const getProducts = (category, sort, search) => async(dispatch) => {
     try {

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getProducts } from '../actions/productsActions';
+import { getProducts } from '@actions/productsActions';
 
 const useFetchProducts = (category, sort, search) => {
     const [reqCategory, setReqCategory] = useState('category=' + category);

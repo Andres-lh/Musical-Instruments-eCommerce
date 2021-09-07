@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addToCart, removeItem } from '../actions/cartActions';
+import { addToCart, removeItem } from '@actions/cartActions';
 import { Link } from 'react-router-dom';
 
 const Cart = (props) => {

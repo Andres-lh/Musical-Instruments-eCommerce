@@ -1,5 +1,5 @@
-import * as api from '../api/api';
-import { CART_ADD_ITEM, CART_REMOVE_ITEM } from '../constants/actionTypes';
+import * as api from '@api/api';
+import { CART_ADD_ITEM, CART_REMOVE_ITEM } from '@constants/actionTypes';
 
 export const addToCart = (id, quantity) => async (dispatch, getState) => {
 

@@ -19,7 +19,11 @@ module.exports = {
             '@components': path.resolve(__dirname, 'src/components/'),
             '@styles': path.resolve(__dirname, 'src/styles/'),
             '@pages': path.resolve(__dirname, 'src/pages/'),
-            '@images': path.resolve(__dirname, 'src/assets/images/')
+            '@images': path.resolve(__dirname, 'src/assets/images/'),
+            '@hooks': path.resolve(__dirname, 'src/hooks/'),
+            '@actions': path.resolve(__dirname, 'src/actions/'),
+            '@constants': path.resolve(__dirname, 'src/constants/'),
+            '@api': path.resolve(__dirname, 'src/api/')
         }
     },
     mode: 'production',

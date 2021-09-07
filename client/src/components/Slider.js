@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import useFetchProducts from '../hooks/useFetchProducts';
+import useFetchProducts from '@hooks/useFetchProducts';
 
 
 const Slider = () => {

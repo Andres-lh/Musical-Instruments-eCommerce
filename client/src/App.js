@@ -1,14 +1,15 @@
 import Navbar from "@components/Navbar";
-import Home from "@pages/Home";
 import Footer from "@components/Footer";
-import ProductDetails from "./pages/ProductDetails";
-import Cart from "./pages/Cart";
-import Guitars from "./pages/Guitars";
-import Basses from './pages/Basses';
-import Drums from './pages/Drums';
-import Keyboards from './pages/Keyboards';
-import Orchestra from './pages/Orchestra';
-import Studio from './pages/Studio';
+import ScrollToTop from "@components/ScrollToTop";
+import Home from "@pages/Home";
+import ProductDetails from "@pages/ProductDetails";
+import Cart from "@pages/Cart";
+import Guitars from "@pages/Guitars";
+import Basses from '@pages/Basses';
+import Drums from '@pages/Drums';
+import Keyboards from '@pages/Keyboards';
+import Orchestra from '@pages/Orchestra';
+import Studio from '@pages/Studio';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -17,6 +18,7 @@ const App = () => {
     return(
         <div className="App">
             <Router>
+                <ScrollToTop />
                 <Navbar />
                 <Switch >
                     <Route exact path='/' component={Home} />
