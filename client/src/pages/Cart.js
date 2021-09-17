@@ -26,7 +26,7 @@ const Cart = (props) => {
                 <div className="cart_container">
                     <hr />
                     <h2>Your cart is empty</h2>
-                    <div className="cart-btn">
+                    <div className="cart_container-btn">
                         <Link to="/">Continue Shopping</Link>
                     </div>
                     <hr />
@@ -68,7 +68,7 @@ const Cart = (props) => {
                                                 $ {item.price * item.quantity}
                                             </h3>
                                         </div>
-                                        <div className="cart-button">
+                                        <div className="cart_container-button">
                                             <button
                                                 type="button"
                                                 onClick={() =>
