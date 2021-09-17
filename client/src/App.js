@@ -10,6 +10,7 @@ import Drums from '@pages/Drums';
 import Keyboards from '@pages/Keyboards';
 import Orchestra from '@pages/Orchestra';
 import Studio from '@pages/Studio';
+import Auth from "@pages/Auth";
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -30,6 +31,7 @@ const App = () => {
                     <Route exact path = '/keyboards' component={Keyboards} />
                     <Route exact path = '/orchestra' component={Orchestra} />
                     <Route exact path = '/studio' component={Studio} />
+                    <Route exact path = '/auth' component={Auth} />
                 </Switch> 
                 <Footer />  
             </Router>  

@@ -9,9 +9,6 @@ const Navbar = () => {
 
     const handleClick = () => setClick(!click);
 
-    const itemsCount = () => {
-        return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
-    }
     const changeNavbar = () => {
         if(window.scrollY >= 200){
             setScrolled(true)
@@ -44,7 +41,7 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li className="nav-item"  >
-                    <Link to="#" className="nav-links"><i className="fas fa-user" /></Link>
+                    <Link to="/auth" className="nav-links"><i className="fas fa-user" /></Link>
                 </li>
             </ul>
         </nav>
