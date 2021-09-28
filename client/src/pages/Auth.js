@@ -1,12 +1,24 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { useHistory } from 'react-router-dom';
+import { signIn, signUp } from '@actions/authActions';
 
 const Auth = () => {
 
     const [isSignUp, setIsSignUp] = useState(false);
+    const dispatch = useDispatch();
+    const history = useHistory();
+
     const [user, setUser] = useState({
         username : '',
         email: '',
         password: ''
+    })
+
+    useEffect(()=> {
+        if(localStorage.getItem('profile')){
+            history.push('/account');
+        }
     })
 
     const onChangeInput = (e) => {
@@ -18,11 +30,21 @@ const Auth = () => {
         setIsSignUp((prevIsSignUp) => !prevIsSignUp)
     }
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if(isSignUp){
+            dispatch(signUp(user, history));
+        } else {
+            dispatch(signIn(user, history));
+        }
+    }
+
+    console.log(user);
     return(
         <div className="auth">
             <div className="auth_container">
                 <h1>{isSignUp ? 'Register' : 'Login'}</h1>
-                <form>
+                <form onSubmit={handleSubmit}>
                     {isSignUp ? (
                         <>
                             <div className = "auth_container-input">

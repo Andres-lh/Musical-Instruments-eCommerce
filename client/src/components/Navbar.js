@@ -41,7 +41,7 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li className="nav-item"  >
-                    <Link to="/auth" className="nav-links"><i className="fas fa-user" /></Link>
+                    <Link to="/account" className="nav-links"><i className="fas fa-user" /></Link>
                 </li>
             </ul>
         </nav>

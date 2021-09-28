@@ -17,5 +17,5 @@ export const fetchProductDetails = (id) => API.get(`/products/${id}`);
 export const addCartItem = (id) => API.get(`/products/${id}`);
 
 //User
-export const login = (userData) => (API.post(`/users/login`), userData);
+export const login = (userData) => API.post(`/users/login`, userData);
 export const register = (userData) => API.post('/users/register', userData);
