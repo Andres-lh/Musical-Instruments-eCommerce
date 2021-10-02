@@ -12,15 +12,15 @@ const Drums = () => {
 
     return(
         <div className="productsPage">
-                    <h1>Drums</h1>
-                    <div className="productsPage_container">
-                        {products.map((product) => {
-                            return (
-                                <ProductCard key={product.id} product={product} />
-                            );
-                        })}
-                    </div>
-                </div>
+            <h1>Drums</h1>
+            <div className="productsPage_container">
+                {products.map((product) => {
+                    return (
+                        <ProductCard key={product.id} product={product} />
+                    );
+                })}
+            </div>
+        </div>
     )
 }
 

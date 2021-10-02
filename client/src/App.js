@@ -22,7 +22,6 @@ const App = () => {
         <div className="App">
             <Router>
                 <ScrollToTop />
-                <Navbar />
                 <Switch >
                     <Route exact path='/' component={Home} />
                     <Route path='/products/:id' component={ProductDetails} />
