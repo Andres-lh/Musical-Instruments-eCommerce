@@ -12,7 +12,8 @@ const Auth = () => {
     const [user, setUser] = useState({
         username : '',
         email: '',
-        password: ''
+        password: '',
+        confirmPassword: ''
     })
 
     useEffect(()=> {
@@ -59,6 +60,10 @@ const Auth = () => {
                                 <input type="password" name="password" id="password" value={user.password} required onChange={onChangeInput}/>
                                 <label>Password</label>
                             </div>
+                            <div className="auth_container-input"> 
+                                <input type="password" name="password" id="password" value={user.confirmPassword} required onChange={onChangeInput}/>
+                                <label>Confirm Password</label>
+                            </div>
                         </>
                         ) : (
                             <>
@@ -67,7 +72,7 @@ const Auth = () => {
                                     <label>Email</label>
                                 </div>
                                 <div className="auth_container-input"> 
-                                    <input type="password" name="password" id="password" value={user.password} required onChange={onChangeInput}/>
+                                    <input type="confirm-password" name="confirm-password" id="confirm-password" value={user.password} required onChange={onChangeInput}/>
                                     <label>Password</label>
                                 </div > 
                             </>

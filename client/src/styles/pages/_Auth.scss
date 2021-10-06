@@ -1,17 +1,20 @@
 .auth {
     height: 100vh;
     width: 100%;
+    background-image: url('@images/black-bass.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     
     &_container {
         position: absolute;
-        height: 450px;
+        height: auto;
         width: 500px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         width: 400px;
         padding: 40px;
-        background: rgba(13, 67, 129, 0.8);
+        background: rgba(61, 69, 100, 0.7);
         box-sizing: border-box;
         box-shadow: 0 15px 25px rgba(26, 16, 2, 0.5);
         border-radius: 10px;
@@ -19,35 +22,41 @@
 
         h1 {
             text-align: center;
-            margin-bottom: 45px ;
+            margin-bottom: 45px;
+            font-size: 35px;
+            color: rgb(122, 181, 216);
+            
+        }
+
+        p{
+            font-size: 19px;
+            color: rgb(174, 216, 243);
         }
 
         &-input {
             position: relative;
-
             input {
                 width: 100%;
                 padding: 8px;
                 letter-spacing: 0.5px;
                 font-size: 16px;
-                color: black;
-                border-radius: 20px;
+                color: rgb(174, 216, 243);
                 outline: none;
-                background: white;
-                border: 1px solid rgb(255, 255, 255);
-                border-radius: 15px;
+                background: transparent;
+                border: none;
+                border-bottom: 1px solid rgb(0, 170, 255);
+                border-radius: 10px;
                 margin-bottom: 40px;
 
                 &:focus ~ label,
                 &:valid ~ label {
                     top: -35px;
                     left: 0; 
-                    font-size: 16px;
+                    font-size: 16px; ;
                 }
 
                 &:-webkit-autofill {
-                    border: 1px solid white;
-                    -webkit-text-fill-color: black;
+                    -webkit-text-fill-color: white;
                     transition: background-color 5000s ease-in-out 0s;
                 }
             }
@@ -59,7 +68,7 @@
                 left: 0;
                 padding: 10px;
                 font-size: 16px;
-                color: black;
+                color: rgb(203, 220, 248);
                 pointer-events: none;
                 transition: 0.5s;
             }
