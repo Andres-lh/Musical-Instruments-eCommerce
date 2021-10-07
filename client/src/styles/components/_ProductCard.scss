@@ -6,11 +6,11 @@
     border-radius: 0.5rem;
     margin: 1rem;
     align-items: center;
+    overflow: hidden;
 
     &:hover {
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
-        transform: scale(1.02);
         transition: 0.3s ease-in;
     }
 
@@ -25,6 +25,8 @@
             object-fit: contain;
             object-position: center;
         }
+
+        
     }
 
     &-body {

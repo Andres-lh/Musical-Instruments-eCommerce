@@ -1,6 +1,5 @@
 import ProductCard from "@components/ProductCard";
 import useFetchProducts from "@hooks/useFetchProducts";
-import Navbar from "@components/Navbar";
 
 const Basses = () => {
     const product = {

@@ -1,0 +1,40 @@
+@use '../abstracts' as *;
+
+.productView{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    color: black;
+
+    &_container {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        @include size(600px, 500px);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        
+        &-close{
+            position: absolute;
+            top: 0;
+            right: 0;
+            border-radius: 45%;
+        }
+
+        
+        &-image {
+            margin: auto;
+            img {
+                @include size(300px, 300px);
+            }
+        }
+    }
+}

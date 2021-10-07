@@ -2,6 +2,7 @@ import ProductCard from '@components/ProductCard';
 import useFetchProducts from '@hooks/useFetchProducts';
 
 
+
 const Section = () => {
 
     const product = {

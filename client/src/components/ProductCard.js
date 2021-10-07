@@ -1,6 +1,12 @@
+import { useState } from 'react'
 import { Link } from "react-router-dom";
 import Rating from '@components/Rating';
+import ProductView from './ProductView';
+
+
 const ProductCard = ({ product }) => {
+    const [productView, setProductView] = useState(false)
+
     return(
         <div className="productCard">
             <div className="productCard-image">
@@ -20,11 +26,10 @@ const ProductCard = ({ product }) => {
                     <span>{`$ ${product.price}`}</span>
                 </div>
             </div>
-            <Link to={`/`}>
-                <button className="productCard-button">
-                    Quick view
-                </button>
-            </Link>
+            <button className="productCard-button" onClick={()=> setProductView(true)} >
+                Quick view
+            </button>
+            {productView && <ProductView product={product} setProductView={setProductView} /> }
         </div>
     )
     
