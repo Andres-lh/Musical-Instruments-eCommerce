@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getProductDetails } from '@actions/productsActions';
 
 const ProductDetails = (props) => {
+    console.log(props)
 
     const dispatch = useDispatch();
     const id = props.match.params.id
@@ -16,7 +17,6 @@ const ProductDetails = (props) => {
 
     const addToCart = () => {
         props.history.push(`/cart/${id}?qty=${quantity}`);
-        console.log('click', id)
     }
 
     return(

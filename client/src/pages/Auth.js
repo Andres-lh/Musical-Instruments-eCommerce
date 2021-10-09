@@ -61,7 +61,7 @@ const Auth = () => {
                                 <label>Password</label>
                             </div>
                             <div className="auth_container-input"> 
-                                <input type="password" name="password" id="password" value={user.confirmPassword} required onChange={onChangeInput}/>
+                                <input type="confirm-password" name="confirm-password" id="confirm-password" value={user.confirmPassword} required onChange={onChangeInput}/>
                                 <label>Confirm Password</label>
                             </div>
                         </>
@@ -72,7 +72,7 @@ const Auth = () => {
                                     <label>Email</label>
                                 </div>
                                 <div className="auth_container-input"> 
-                                    <input type="confirm-password" name="confirm-password" id="confirm-password" value={user.password} required onChange={onChangeInput}/>
+                                    <input type="password" name="password" id="password" value={user.password} required onChange={onChangeInput}/>
                                     <label>Password</label>
                                 </div > 
                             </>
