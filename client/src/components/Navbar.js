@@ -2,7 +2,8 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
-const Navbar = () => {
+const Navbar = (props) => {
+    console.log(props)
     const [click, setClick] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const { cartItems } = useSelector(state => state.cart);

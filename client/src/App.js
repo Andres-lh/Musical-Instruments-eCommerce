@@ -1,5 +1,3 @@
-import Navbar from "@components/Navbar";
-import Footer from "@components/Footer";
 import ScrollToTop from "@components/ScrollToTop";
 import Home from "@pages/Home";
 import ProductDetails from "@pages/ProductDetails";
@@ -13,6 +11,7 @@ import Studio from '@pages/Studio';
 import Auth from "@pages/Auth";
 import Account from "@pages/Account";
 import PrivateRoute from "./routing/privateRoute";
+import CustomRoute from "./routing/CustomRoute";
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -22,21 +21,19 @@ const App = () => {
         <div className="App">
             <Router>
                 <ScrollToTop />
-                <Navbar />
                 <Switch >
-                    <Route exact path='/' component={Home} />
-                    <Route path='/products/:id' component={ProductDetails} />
-                    <Route  exact path='/cart/:id?' component={Cart} />
-                    <Route exact path = '/guitars' component={Guitars} />
-                    <Route exact path = '/basses' component={Basses} />
-                    <Route exact path = '/drums' component={Drums} />
-                    <Route exact path = '/keyboards' component={Keyboards} />
-                    <Route exact path = '/orchestra' component={Orchestra} />
-                    <Route exact path = '/studio' component={Studio} />
-                    <Route exact path = '/auth' component={Auth} />
-                    <PrivateRoute exact path = '/account' component={Account} />
-                </Switch> 
-                <Footer />  
+                    <CustomRoute exact path='/' component={Home} nav='no' footer={true}/>
+                    <CustomRoute path='/products/:id' component={ProductDetails} footer={true}/>
+                    <CustomRoute exact path='/cart/:id?' component={Cart} footer={true} />
+                    <CustomRoute exact path = '/guitars' component={Guitars} footer={true} />
+                    <CustomRoute exact path = '/basses' component={Basses} footer={true} />
+                    <CustomRoute exact path = '/drums' component={Drums} footer={true} />
+                    <CustomRoute exact path = '/keyboards' component={Keyboards} footer={true} />
+                    <CustomRoute exact path = '/orchestra' component={Orchestra} footer={true} />
+                    <CustomRoute exact path = '/studio' component={Studio} footer={true} />
+                    <CustomRoute exact path = '/auth' component={Auth} footer={false} />
+                    <PrivateRoute exact path = '/account' component={Account}  />
+                </Switch>  
             </Router>  
         </div>
     )

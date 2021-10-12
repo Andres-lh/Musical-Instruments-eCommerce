@@ -1,6 +1,5 @@
 import { useHistory } from 'react-router-dom';
 import { useDispatch } from 'react-redux'
-import Navbar from "@components/Navbar";
 
 const Account = () => {
 
@@ -14,7 +13,6 @@ const Account = () => {
 
     return(
         <div>
-            <Navbar />
             <h1>Account</h1>
             <button onClick={logout}>Log Out</button>
         </div>
