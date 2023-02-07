@@ -17,7 +17,7 @@ https://voluble-yeot-a741ec.netlify.app
 
 ![](https://github.com/Andres-lh/Musical-Instruments-eCommerce/blob/master/client/src/assets/screenshots/Screenshot_20230206_063658.png?raw=true)
 
-![](https://github.com/Andres-lh/Musical-Instruments-eCommerce/blob/master/client/src/assets/screenshots/Screenshot_20230206_063717.png?raw=true)
+![](https://github.com/Andres-lh/Musical-Instruments-eCommerce/blob/master/client/src/assets/screenshots/Screenshot_20230207_121841.png?raw=true)
 
 ![](https://github.com/Andres-lh/Musical-Instruments-eCommerce/blob/master/client/src/assets/screenshots/Screenshot_20230206_064549.png?raw=true)
 
