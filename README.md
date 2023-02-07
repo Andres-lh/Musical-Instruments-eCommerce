@@ -11,4 +11,16 @@ A fully responsive musical instruments ecommerce built with MERN stack and Redux
 ------------
 
 #### Demo Wesite:
-[https://music-instruments-app.herokuapp.com/](https://music-instruments-app.herokuapp.com/)
+https://voluble-yeot-a741ec.netlify.app
+
+## Screenshots:
+
+![](https://github.com/Andres-lh/Musical-Instruments-eCommerce/blob/master/client/src/assets/screenshots/Screenshot_20230206_063658.png?raw=true)
+
+![](https://github.com/Andres-lh/Musical-Instruments-eCommerce/blob/master/client/src/assets/screenshots/Screenshot_20230206_063717.png?raw=true)
+
+![](https://github.com/Andres-lh/Musical-Instruments-eCommerce/blob/master/client/src/assets/screenshots/Screenshot_20230206_064549.png?raw=true)
+
+![](https://github.com/Andres-lh/Musical-Instruments-eCommerce/blob/master/client/src/assets/screenshots/Screenshot_20230206_064607.png?raw=true)
+
+![](https://github.com/Andres-lh/Musical-Instruments-eCommerce/blob/master/client/src/assets/screenshots/Screenshot_20230206_063736.png?raw=true)
