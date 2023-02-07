@@ -3,7 +3,7 @@ import CategoryCard from '@components/CategoryCard'
 
 const CategorySection = () => {
     return (
-        <div className = "categories" >
+        <div className = "categories" id='products'>
             <h1>Shop by category</h1>
             <div className = "categories_grid">
                 <Link to= "/guitars">

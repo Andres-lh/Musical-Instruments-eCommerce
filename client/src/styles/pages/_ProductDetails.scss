@@ -6,6 +6,7 @@
     min-height: 100vh;
     justify-content: center;
     align-items: center;
+    padding-top: 5rem;
 
     &_container {
         @include size(80%, 80%);

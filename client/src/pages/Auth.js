@@ -40,7 +40,6 @@ const Auth = () => {
         }
     }
 
-    console.log(user);
     return(
         <div className="auth">
             <div className="auth_container">

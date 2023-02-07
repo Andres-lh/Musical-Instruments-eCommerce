@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 
 .footer {
-    @include size(auto, 100%);
+    @include size(100vh, 100%);
     width: 100%;
     position: relative;
     display: flex;

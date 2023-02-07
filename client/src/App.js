@@ -22,16 +22,16 @@ const App = () => {
             <Router>
                 <ScrollToTop />
                 <Switch >
-                    <CustomRoute exact path='/' component={Home} nav='no' footer={true}/>
-                    <CustomRoute path='/products/:id' component={ProductDetails} footer={true}/>
-                    <CustomRoute exact path='/cart/:id?' component={Cart} footer={true} />
-                    <CustomRoute exact path = '/guitars' component={Guitars} footer={true} />
-                    <CustomRoute exact path = '/basses' component={Basses} footer={true} />
-                    <CustomRoute exact path = '/drums' component={Drums} footer={true} />
-                    <CustomRoute exact path = '/keyboards' component={Keyboards} footer={true} />
-                    <CustomRoute exact path = '/orchestra' component={Orchestra} footer={true} />
-                    <CustomRoute exact path = '/studio' component={Studio} footer={true} />
-                    <CustomRoute exact path = '/auth' component={Auth} footer={false} />
+                    <CustomRoute exact path='/' component={Home} footer={true}/>
+                    <CustomRoute path='/products/:id' component={ProductDetails} footer={true} solidNav={true}/>
+                    <CustomRoute exact path='/cart/:id?' component={Cart} footer={true} solidNav={true}/>
+                    <CustomRoute exact path = '/guitars' component={Guitars} footer={true} solidNav={true}/>
+                    <CustomRoute exact path = '/basses' component={Basses} footer={true} solidNav={true} />
+                    <CustomRoute exact path = '/drums' component={Drums} footer={true} solidNav={true} />
+                    <CustomRoute exact path = '/keyboards' component={Keyboards} footer={true} solidNav={true} />
+                    <CustomRoute exact path = '/orchestra' component={Orchestra} footer={true} solidNav={true} />
+                    <CustomRoute exact path = '/studio' component={Studio} footer={true} solidNav={true} />
+                    <CustomRoute exact path = '/auth' component={Auth} />
                     <PrivateRoute exact path = '/account' component={Account}  />
                 </Switch>  
             </Router>  

@@ -1,21 +1,32 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
-const Navbar = (props) => {
-    console.log(props)
+const Navbar = ({ solidNav }) => {
+ 
     const [click, setClick] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const [scrollNum, setScrollNum] = useState(200);
     const { cartItems } = useSelector(state => state.cart);
+
+    useEffect(() => {
+        if(solidNav) {
+            setScrollNum(0);
+            setScrolled(true);
+        }else {
+            setScrollNum(200);
+            setScrolled(false);
+        } 
+    }, [solidNav])
 
     const handleClick = () => setClick(!click);
 
     const changeNavbar = () => {
-        if(window.scrollY >= 200){
-            setScrolled(true)
-        } else {
-            setScrolled(false)
-        }
+            if(window.scrollY >= scrollNum){
+                setScrolled(true)
+            } else {
+                setScrolled(false)
+            }
     }
 
     window.addEventListener('scroll', changeNavbar);
@@ -31,10 +42,10 @@ const Navbar = (props) => {
             </div>
             <ul className={click ? "nav-menu mobile" : "nav-menu" }>
                 <li className="nav-item">
-                    <Link to="#" className="nav-links">Products </Link>
+                    <a href="/#products" className="nav-links">Products </a>
                 </li>
                 <li className="nav-item">
-                    <Link to="#" className="nav-links">About</Link>
+                    <a href="/#about" className="nav-links">About</a>
                 </li>
                 <li className="nav-item">
                     <Link to="/cart"  className="nav-links"><i className="fas fa-shopping-cart" /> 
