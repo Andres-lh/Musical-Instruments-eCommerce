@@ -10,7 +10,7 @@ import Orchestra from '@pages/Orchestra';
 import Studio from '@pages/Studio';
 import Auth from "@pages/Auth";
 import Account from "@pages/Account";
-import PrivateRoute from "./routing/privateRoute";
+import PrivateRoute from "./routing/PrivateRoute";
 import CustomRoute from "./routing/CustomRoute";
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
