@@ -11,7 +11,7 @@ A fully responsive musical instruments ecommerce built with MERN stack and Redux
 ------------
 
 #### Demo Wesite:
-https://voluble-yeot-a741ec.netlify.app
+https://music-ecommerce-instruments.netlify.app/
 
 ## Screenshots:
 
